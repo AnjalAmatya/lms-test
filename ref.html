@@ -1,0 +1,152 @@
+<div id="page3" class="page">
+        <h2><button class="speak_btn" data-target="speak23">&#128266;</button>
+            <span id="speak23">Let's Guess</span>
+            <span class="nepali-sub">अनुमान गरौं</span>
+        </h2>
+        <p><button class="speak_btn" data-target="speak24">&#128266;</button>
+            <span id="speak24">Look at the image below and guess what the following people are doing.</span>
+            <span class="nepali-sub">तलको तस्बिर हेर्नुहोस् र अनुमान गर्नुहोस् कि निम्न व्यक्तिहरू के गर्दैछन्।</span>
+        </p>
+        <h2>Mother Tongue Greetings <span class="nepali-sub">विभिन्न भाषामा अभिवादन</span></h2>
+        <p>Flip the cards to see greetings in different languages: <span class="nepali-sub">विभिन्न भाषामा कसरी अभिवादन गरिन्छ हेर्न कार्ड पल्टाउनुहोस्:</span></p>
+        <div class="flip-grid">
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner"><div class="f-front">Maithili</div><div class="f-back">Pranaam</div></div>
+            </div>
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner"><div class="f-front">Nepal Bhasa</div><div class="f-back">Jwojwo-loppa</div></div>
+            </div>
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner"><div class="f-front">Limbu</div><div class="f-back">Sewaro</div></div>
+            </div>
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner"><div class="f-front">Bhojpuri</div><div class="f-back">Ram Ram</div></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page4" class="page">
+        <h2>Formal & Informal <span class="nepali-sub">औपचारिक र अनौपचारिक</span></h2>
+        <div class="instruction-box">
+            <p><strong>Formal:</strong> Teachers, bosses, or strangers. <span class="nepali-sub">शिक्षक, हाकिम वा अपरिचित व्यक्तिसँग।</span></p>
+            <p><strong>Informal:</strong> Friends and family. <span class="nepali-sub">साथीभाइ र परिवारसँग।</span></p>
+        </div>
+        <div class="quiz-block" data-qid="q4_1">
+            <p><strong>You meet your Doctor. How should you greet? <span class="nepali-sub">तपाईं डाक्टरलाई भेट्नुहुन्छ। कसरी अभिवादन गर्नुहुन्छ?</span></strong></p>
+            <button class="option" onclick="handleQuiz(this, true, 'q4_1')">"Good morning, Doctor." (Formal)</button>
+            <button class="option" onclick="handleQuiz(this, false, 'q4_1')">"Yo! What's up?" (Informal)</button>
+        </div>
+    </div>
+
+    <div id="page5" class="page">
+        <h2>Time of Day <span class="nepali-sub">समय अनुसारको अभिवादन</span></h2>
+        <div class="quiz-block" data-qid="q5_1">
+            <p><strong>It is 2:00 PM. What do you say? <span class="nepali-sub">दिउँसोको २ बजेको छ। तपाईं के भन्नुहुन्छ?</span></strong></p>
+            <button class="option" onclick="handleQuiz(this, true, 'q5_1')">Good Afternoon</button>
+            <button class="option" onclick="handleQuiz(this, false, 'q5_1')">Good Morning</button>
+        </div>
+        <div class="quiz-block" data-qid="q5_2">
+            <p><strong>Going to bed at 9:00 PM. You say: <span class="nepali-sub">राती ९ बजे सुत्न जाँदा भनिन्छ:</span></strong></p>
+            <button class="option" onclick="handleQuiz(this, true, 'q5_2')">Good Night <small>(शुभ रात्री)</small></button>
+            <button class="option" onclick="handleQuiz(this, false, 'q5_2')">Good Afternoon</button>
+        </div>
+    </div>
+
+    <div id="page6" class="page">
+        <h2>Vocabulary <span class="nepali-sub">शब्दावली</span></h2>
+        <p>Click to see meanings: <span class="nepali-sub">अर्थ हेर्न क्लिक गर्नुहोस्:</span></p>
+        <div class="flip-grid">
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner"><div class="f-front">Fine</div><div class="f-back">ठीक छ</div></div>
+            </div>
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner"><div class="f-front">Understand</div><div class="f-back">बुझ्नु</div></div>
+            </div>
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner"><div class="f-front">Store</div><div class="f-back">पसल</div></div>
+            </div>
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner"><div class="f-front">Try Best</div><div class="f-back">सकेसम्म प्रयास गर्ने</div></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page7" class="page">
+        <h2>Dialogue Practice <span class="nepali-sub">संवाद अभ्यास</span></h2>
+        <div class="dialogue-box">
+               <p><strong>Ramita:</strong> Good morning, Lalita... (rest of your text)</p>
+               </div>
+        
+        <div class="quiz-block" data-qid="q7_1">
+            <p><strong>What is Lalita trying her best to do? <span class="nepali-sub">ललिताले के गर्न सक्दो प्रयास गर्नेछिन्?</span></strong></p>
+            <button class="option" onclick="handleQuiz(this, false, 'q7_1')">To go to the doctor. <small>(डाक्टरकहाँ जानको लागि।)</small></button>
+            <button class="option" onclick="handleQuiz(this, true, 'q7_1')">To go to Ramita's home. <small>(रमिताको घर जानको लागि।)</small></button>
+        </div>
+    </div>
+
+    <div id="page8" class="page">
+        <h2>Matching <span class="nepali-sub">सही उत्तर छान्नुहोस्</span></h2>
+        <div class="quiz-block" data-qid="q8_1">
+            <p><strong>"How do you do?"</strong></p>
+            <button class="option" onclick="handleQuiz(this, true, 'q8_1')">Response: "How do you do?"</button>
+            <button class="option" onclick="handleQuiz(this, false, 'q8_1')">Response: "Nothing much."</button>
+        </div>
+        <div class="quiz-block" data-qid="q8_2">
+            <p><strong>"What's up?"</strong></p>
+            <button class="option" onclick="handleQuiz(this, true, 'q8_2')">Response: "Nothing much." <small>(केही खास छैन।)</small></button>
+            <button class="option" onclick="handleQuiz(this, false, 'q8_2')">Response: "I am fine."</button>
+        </div>
+    </div>
+
+    <div id="page9" class="page">
+        <h2>Lesson 1 Completed! <span class="nepali-sub">खण्ड १ सम्पन्न भयो!</span></h2>
+        <center><h3>Ready for Lesson 2?</h3></center>
+    </div>
+
+<script>
+    let current = 0;
+    const total = 10;
+    const answers = { 
+        q0_1: false, q0_2: false, q2_1: false, 
+        q4_1: false, q5_1: false, q5_2: false, q7_1: false, q8_1: false, q8_2: false 
+    };
+    const reqs = { 
+        0: ['q0_1', 'q0_2'], 2: ['q2_1'], 3: [], 
+        4: ['q4_1'], 5: ['q5_1', 'q5_2'], 6: [], 7: ['q7_1'], 8: ['q8_1', 'q8_2'], 9: [] 
+    };
+
+    function handleQuiz(btn, isCorr, qid) {
+        // Improved selector to work with your original option_row divs
+        const block = btn.closest('.quiz-block');
+        const opts = block.querySelectorAll('.option');
+        
+        opts.forEach(o => o.classList.remove('correct', 'wrong'));
+        if(isCorr) { btn.classList.add('correct'); answers[qid] = true; }
+        else { btn.classList.add('wrong'); answers[qid] = false; }
+        checkPage();
+    }
+
+    function checkPage() {
+        const r = reqs[current];
+        const ok = r.every(id => answers[id] === true);
+        document.getElementById('btnNext').disabled = !ok;
+    }
+
+    function changePage(step) {
+        document.getElementById(`page${current}`).classList.remove('active');
+        current += step;
+        document.getElementById(`page${current}`).classList.add('active');
+        document.getElementById('btnBack').disabled = (current === 0);
+        document.getElementById('pb').style.width = (current / (total-1) * 100) + "%";
+        
+        const nextBtn = document.getElementById('btnNext');
+        if(current === total-1) nextBtn.innerText = "Finish (समाप्त)";
+        else nextBtn.innerText = "Next (अगाडि)";
+        
+        checkPage();
+        window.scrollTo(0,0);
+    }
+    
+    // Ensure the button state is correct when the app starts
+    window.onload = checkPage;
+</script>

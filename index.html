@@ -1,694 +1,1791 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L1 English - Section 1: Full Content</title>
+    <title>L1 English for Communication - Lesson 1: Greetings</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bg.css">
+    <style>
+        .page { display: none; }
+        .page.active { display: block; }
+        .option.correct { background-color: #dcfce7; border-color: #22c55e; }
+        .option.wrong { background-color: #fee2e2; border-color: #ef4444; }
+    </style>
     <script src="js/puter.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 
 <header>
     <div class="progress-wrapper"><div class="progress-bar" id="pb"></div></div>
-    <strong><button class="speak_btn" id="speak-button1">&#128266;</button><span id="speak1">Section 1: Greetings </span>(अभिवादन)</strong>
-    <script>
-        document.getElementById('speak-button1').addEventListener('click', () => {
-            const text = document.getElementById('speak1').innerText;
-            puter.ai.txt2speech(text, {
-                voice: "Ivy",
-                engine: "neural",
-                language: "en-US"
-            }).then((audio) => {
-                audio.play();
-            }).catch((error) => {
-                console.error("Speech Error:", error);
-            });
-        });
-        </script>
+    <strong>
+    <button class="speak_btn" data-target="speak1">&#128266;</button>
+    <span id="speak1">Lesson 1: Greetings </span><span class="nepali_sub">(अभिवादन)</span>
+    </strong>
 </header>
 
+<div class="scenery-container">
+    <div class="sky-glow"></div>
+
+    <div class="cloud c1 super-large"></div>
+    <div class="cloud c2 medium"></div>
+    <div class="cloud c3 super-large"></div>
+    <div class="cloud c4 small"></div>
+    <div class="cloud c5 small"></div>
+
+    <div class="mountain_bg">
+        <div class="mountain">
+            <div class="mountain-top">
+                <div class="mountain-cap-1"></div>
+                <div class="mountain-cap-2"></div>
+                <div class="mountain-cap-3"></div>
+            </div>
+        </div>
+        <div class="mountain-two">
+            <div class="mountain-top">
+                <div class="mountain-cap-1"></div>
+                <div class="mountain-cap-2"></div>
+                <div class="mountain-cap-3"></div>
+            </div>
+        </div>
+        <div class="mountain-three">
+            <div class="mountain-top">
+                <div class="mountain-cap-1"></div>
+                <div class="mountain-cap-2"></div>
+                <div class="mountain-cap-3"></div>
+            </div>
+        </div>
+    </div><!-- /mountain_bg -->
+
+    <div class="leaf l1">&#127811;</div>
+    <div class="leaf l2">&#127807;</div>
+    <div class="leaf l3">&#127811;</div>
+    <div class="leaf l4">&#127807;</div>
+    <div class="leaf l5">&#127811;</div>
+
+    <div class="playground"></div>
+</div>
 <main>
- 
-        <h2><button class="speak_btn" id="speak-button2">&#128266;</button><span id="speak2">Pre-Assessment </span><span class="nepali-sub">पूर्व-मूल्याङ्कन</span></h2>
-        <script>
-        document.getElementById('speak-button2').addEventListener('click', () => {
-            const text = document.getElementById('speak2').innerText;
-            puter.ai.txt2speech(text, {
-                voice: "Danielle",
-                engine: "generative",
-                language: "en-US"
-            }).then((audio) => {
-                audio.play();
-            }).catch((error) => {
-                console.error("Speech Error:", error);
-            });
-        });
-        </script>
-        
+
+    <div id="page0" class="page active">
+            <h2>
+            <button class="speak_btn" data-target="speak2">&#128266;</button>
+            <span id="speak2">Pre-Assessment </span><span class="nepali_sub">पूर्व-मूल्याङ्कन</span></h2>  
+            <div class="info-container">
+                <button class="info-btn" onclick="toggleTooltip()">&#10068;</button>
+                
+                <div id="infoTooltip" class="tooltip-popup">
+                    <button class="speak_btn" data-target="speak3">&#128266;</button>
+                    <span id="speak3">Before studying this learning material, answer the questions below to see how much you already know about the topics in this learning material.</span>
+                    <span class="nepali_sub">यो सिकाइ सामग्री अध्ययन गर्नु अघि, यस सिकाइ सामग्रीमा भएका विषयहरूको बारेमा तपाईंलाई पहिले नै कति थाहा छ भनेर हेर्न तलका प्रश्नहरूको उत्तर दिनुहोस्।</span>
+                </div>
+            </div><!-- /info-container -->
+            
+            <div class="quiz-block" data-qid="q0_1">
         <p>
-            <button class="speak_btn" id="speak-button3">&#128266;</button>
-            <span id="speak3">Let's check your current knowledge before we start. </span>
-            <span class="nepali-sub">सुरु गर्नु अघि तपाईंको हालको ज्ञान परीक्षण गरौँ।</span>
+            <button class="speak_btn" data-target="speak4">&#128266;</button>
+            <strong>1. <span id="speak4"> What do you say to greet people at 5:00 pm?</span>
+                <span class="nepali_sub">साँझ ५:०० बजे मानिसहरूलाई अभिवादन गर्दा तपाईं के भन्नुहुन्छ?</span>
+            </strong>
         </p>
-
-        <script>
-        document.getElementById('speak-button3').addEventListener('click', () => {
-            const text = document.getElementById('speak3').innerText;
-            puter.ai.txt2speech(text, {
-                voice: "Danielle",
-                engine: "generative",
-                language: "en-US"
-            }).then((audio) => {
-                audio.play();
-            }).catch((error) => {
-                console.error("Speech Error:", error);
-            });
-        });
-        </script>
         
-        <div class="quiz-block" data-qid="q0_1">
-            <p><button class="speak_btn" id="speak-button4">&#128266;</button>
-                <strong>1.<span id="speak4"> Which greeting is used in the morning?</span> <span class="nepali-sub">बिहानको समयमा कुन अभिवादन प्रयोग गरिन्छ?</span></strong></p>
-            <script>
-            document.getElementById('speak-button4').addEventListener('click', () => {
-                const text = document.getElementById('speak4').innerText;
-                puter.ai.txt2speech(text, {
-                    voice: "Danielle",
-                    engine: "generative",
-                    language: "en-US"
-                }).then((audio) => {
-                    audio.play();
-                }).catch((error) => {
-                    console.error("Speech Error:", error);
-                });
-            });
-            </script>
+        <div class="options-wrapper">
             <div class="option_row">
-            <button class="speak_btn" id="speak-button5">&#128266;</button><button class="option" onclick="handleQuiz(this, true, 'q0_1')"><span id="speak5">Good Morning</span> <small>(शुभ प्रभात)</small></button>
-            <script>
-            document.getElementById('speak-button5').addEventListener('click', () => {
-                const text = document.getElementById('speak5').innerText;
-                puter.ai.txt2speech(text, {
-                    voice: "Ivy",
-                    engine: "neural",
-                    language: "en-US"
-                }).then((audio) => {
-                    audio.play();
-                }).catch((error) => {
-                    console.error("Speech Error:", error);
-                });
-            });
-            </script>
+                <button class="option rot_l" onclick="handleQuiz(this, false, 'q0_1')">
+                    <span id="speak5">Good Morning</span><span class="nepali_sub">(शुभ प्रभात)</span>
+                </button>
+                <button class="speak_btn" data-target="speak5">&#128266;</button>
             </div>
-            <div class="option_row">
-            <button class="speak_btn" id="speak-button6">&#128266;</button><button class="option" onclick="handleQuiz(this, false, 'q0_1')"><span id="speak6">Good Afternoon</span> <small>(शुभ अपराह्न)</small></button>
-            <script>
-            document.getElementById('speak-button6').addEventListener('click', () => {
-                const text = document.getElementById('speak6').innerText;
-                puter.ai.txt2speech(text, {
-                     voice: "Ivy",
-                    engine: "neural",
-                    language: "en-US"
-                }).then((audio) => {
-                    audio.play();
-                }).catch((error) => {
-                    console.error("Speech Error:", error);
-                });
-            });
-            </script>
+            <div class="option_row rot_r">
+                <button class="option" onclick="handleQuiz(this, false, 'q0_1')">
+                    <span id="speak6">Good Afternoon</span><span class="nepali_sub">(शुभ अपराह्न)</span>
+                </button>
+                <button class="speak_btn" data-target="speak6">&#128266;</button>
+            </div>
+            <div class="option_row rot_l">
+                <button class="option" onclick="handleQuiz(this, true, 'q0_1')">
+                    <span id="speak7">Good Evening</span><span class="nepali_sub">(शुभ साँझ)</span>
+                </button>
+                <button class="speak_btn" data-target="speak7">&#128266;</button>
             </div>
         </div>
+        </div><!-- /quiz-block -->
 
-        <div class="quiz-block" data-qid="q0_2">
-            <p><strong>2. How do you respond to "How are you?" <span class="nepali-sub">"तपाईंलाई कस्तो छ?" भनेर सोध्दा के जवाफ दिनुहुन्छ?</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q0_2')">I am fine, thank you. <small>(मलाई ठिक छ, धन्यवाद।)</small></button>
-            <button class="option" onclick="handleQuiz(this, false, 'q0_2')">Nice to meet you. <small>(तपाईंलाई भेटेर खुसी लाग्यो।)</small></button>
-        </div>
-    </div>
+            <div class="quiz-block" data-qid="q0_2">
+                <p>
+                    <button class="speak_btn" data-target="speak8">&#128266;</button>
+                    <strong>2.
+                    <span id="speak8"> What do you say when you take a leave from your friend?</span>
+                    <span class="nepali_sub">साथीबाट बिदा लिँदा के भन्नुहुन्छ?</span>
+                    </strong>
+                </p>
+            <div class="options-wrapper">
+                <div class="option_row rot_r">
+                    <button class="option" onclick="handleQuiz(this, false, 'q0_2')">
+                        <span id="speak9">Good Morning</span><span class="nepali_sub">(शुभ प्रभात)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak9">&#128266;</button>
+                </div>
+                <div class="option_row rot_l">
+                    <button class="option" onclick="handleQuiz(this, true, 'q0_2')">
+                        <span id="speak10">See You Soon</span><span class="nepali_sub">(चाँडै भेटौँला)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak10">&#128266;</button>
+                </div>
+                <div class="option_row rot_r">
+                    <button class="option" onclick="handleQuiz(this, false, 'q0_2')">
+                        <span id="speak11">Thank You</span><span class="nepali_sub">(धन्यवाद)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak11">&#128266;</button>
+                </div>
+            </div>
+            </div><!-- /quiz-block -->
+    </div><!-- /page -->
 
     <div id="page1" class="page">
-        <h2>Learning Objectives <span class="nepali-sub">सिकाइका उद्देश्यहरू</span></h2>
+        <h2><button class="speak_btn" data-target="speak12">&#128266;</button>
+            <span id="speak12">Learning Objectives</span>
+            <span class="nepali_sub">सिकाइका उद्देश्यहरू</span>
+        </h2>
         <div class="instruction-box">
             <ul>
-                <li>Greet and respond in English and Mother Tongue. <span class="nepali-sub">अंग्रेजी र मातृभाषामा अभिवादन र प्रतिक्रिया दिन।</span></li>
-                <li>Identify formal and informal greetings. <span class="nepali-sub">औपचारिक र अनौपचारिक अभिवादनहरू चिन्न।</span></li>
-                <li>Understand body language and gestures. <span class="nepali-sub">शारीरिक भाषा र इसाराहरू बुझ्न।</span></li>
+                <li>
+                    <button class="speak_btn" data-target="speak13">&#128266;</button>
+                    <span id="speak13">To express one’s thoughts clearly and naturally.</span>
+                    <span class="nepali_sub">आफ्ना विचारहरू स्पष्ट र स्वाभाविक रूपमा व्यक्त गर्न।</span>
+                </li>
+
+                <li>
+                    <button class="speak_btn" data-target="speak14">&#128266;</button>
+                    <span id="speak14">To read simple sentences and short paragraphs correctly in a natural speed, and tell their meanings.</span>
+                    <span class="nepali_sub">साधारण वाक्य र छोटा अनुच्छेदहरू स्वाभाविक गतिमा सहीसँग पढ्न र तिनीहरूको अर्थ बताउन।</span>
+                </li>
+
+                <li>
+                    <button class="speak_btn" data-target="speak15">&#128266;</button>
+                    <span id="speak15">To express own’s thoughts in simple sentences.</span>
+                    <span class="nepali_sub">आफ्ना विचारहरू सरल वाक्यहरूमा व्यक्त गर्न।</span>
+                </li>
+
+                <li>
+                    <button class="speak_btn" data-target="speak16">&#128266;</button>
+                    <span id="speak16">To greet, address and introduce and respond in English.</span>
+                    <span class="nepali_sub">अंग्रेजीमा अभिवादन, सम्बोधन, परिचय र प्रतिक्रिया दिन।</span>
+                </li>
             </ul>
         </div>
-        <h3>Gestures <span class="nepali-sub">इसाराहरू</span></h3>
-        <p>In Nepal, we often use 'Namaste'. In English, we might wave or shake hands. <span class="nepali-sub">नेपालमा हामी 'नमस्ते' गर्छौँ। अंग्रेजीमा हात हल्लाउने वा हात मिलाउने गरिन्छ।</span></p>
-        
-        <div class="quiz-block" data-qid="q1_1">
-            <p><strong>Which gesture is most common for 'Namaste'? <span class="nepali-sub">'नमस्ते' गर्दा कुन इसारा सबैभन्दा बढी प्रयोग गरिन्छ?</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q1_1')">Joining two palms together <small>(दुई हत्केला जोड्ने)</small></button>
-            <button class="option" onclick="handleQuiz(this, false, 'q1_1')">Waving one hand <small>(एउटा हात हल्लाउने)</small></button>
-        </div>
-    </div>
+    </div><!-- page -->
 
     <div id="page2" class="page">
-        <h2>Guess the Action <span class="nepali-sub">चित्र हेरेर अनुमान गरौँ</span></h2>
-        <p>Look at the image below. What is happening? <span class="nepali-sub">तलको चित्र हेर्नुहोस्। त्यहाँ के भइरहेको छ?</span></p>
+        <h2><button class="speak_btn" data-target="speak17">&#128266;</button>
+            <span id="speak17">Let's Guess</span>
+            <span class="nepali_sub">अनुमान गरौं</span>
+        </h2>
+        <p class="caption"><button class="speak_btn" data-target="speak18">&#128266;</button>
+            <span id="speak18">Look at the image below and guess what the following people are doing.</span>
+            <span class="nepali_sub">तलको तस्बिर हेर्नुहोस् र अनुमान गर्नुहोस् कि निम्न व्यक्तिहरू के गर्दैछन्।</span>
+        </p>
         <div style="background:#f1f5f9; padding:2rem; text-align:center; border-radius:15px; margin-bottom:1rem; border: 2px dashed #cbd5e1;">
             <img src="images/greetings.png" alt="Namaste">
         </div>
-        <div class="quiz-block" data-qid="q2_1">
-            <p><strong>What are the people doing? <span class="nepali-sub">मानिसहरू के गर्दैछन्?</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q2_1')">They are greeting each other. <small>(अभिवादन गर्दैछन्)</small></button>
-            <button class="option" onclick="handleQuiz(this, false, 'q2_1')">They are complaining. <small>(गुनासो गर्दैछन्)</small></button>
-        </div>
-    </div>
+         <div class="quiz-block" data-qid="q2_1">
+            <p>
+                <button class="speak_btn" data-target="speak19">&#128266;</button>
+                <strong>
+                <span id="speak19">Did You Guess? What Are They Doing?</span>
+                <span class="nepali_sub">के तपाईंले अनुमान गर्नुभयो? तिनीहरू के गर्दैछन्?</span>
+                </strong>
+            </p>
+            <div class="options-wrapper">
+                <div class="option_row rot_l">
+                    <button class="option" onclick="handleQuiz(this, false, 'q2_1')">
+                        <span id="speak20">They are working</span><span class="nepali_sub">(काम गरिरहेका छन्)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak20">&#128266;</button>
+                </div>
+                <div class="option_row rot_r">
+                    <button class="option" onclick="handleQuiz(this, true, 'q2_1')">
+                        <span id="speak21">They are greeting</span><span class="nepali_sub">(अभिवादन गरिरहेका छन्)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak21">&#128266;</button>
+                </div>
+                <div class="option_row rot_l">
+                    <button class="option" onclick="handleQuiz(this, false, 'q2_1')">
+                        <span id="speak22">They are saying sorry</span><span class="nepali_sub">(उनीहरुले माफी मागिरहेका छन्)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak22">&#128266;</button>
+                </div>
+            </div>
+        </div><!-- /quiz-block -->
+    </div><!-- /page -->
 
     <div id="page3" class="page">
-        <h2>Mother Tongue Greetings <span class="nepali-sub">विभिन्न भाषामा अभिवादन</span></h2>
-        <p>Flip the cards to see greetings in different languages: <span class="nepali-sub">विभिन्न भाषामा कसरी अभिवादन गरिन्छ हेर्न कार्ड पल्टाउनुहोस्:</span></p>
-        <div class="flip-grid">
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Maithili</div><div class="f-back">Pranaam</div></div>
+        <h2><button class="speak_btn" data-target="speak23">&#128266;</button>
+            <span id="speak23">Let's Study</span>
+            <span class="nepali_sub">अध्ययन गरौं</span>
+        </h2>
+        <p class="caption"><button class="speak_btn" data-target="speak24">&#128266;</button>
+            <span id="speak24">The conversation below show the different componenets of greetings and introduction. Read the sentences below aloud and answer the questions that follow</span>
+            <span class="nepali_sub">तलको कुराकानीले अभिवादन र परिचयका विभिन्न घटकहरू देखाउँछ। तलका वाक्यहरू ठूलो स्वरले पढ्नुहोस् र दिइएका प्रश्नहरूको उत्तर दिनुहोस्।</span>
+        </p>
+        <div class="dialogue">
+            <div class="char"><img src="images/nancy.png" alt="Nancy"></div>
+            <div class="chat-flow">
+                <div class="bubble1 l">
+                    <button class="speak_btn" data-target="speak25">&#128266;</button>
+                    <span id="speak25">Hello. How are you?</span>
+                </div>
+                <div class="bubble1 r">
+                    <button class="speak_btn" data-target="speak26" data-voice="male">&#128266;</button>
+                    <span id="speak26">Hi! I’m good, thanks. How are you?</span>
+                </div>
+
+                <div class="bubble1 l">
+                    <button class="speak_btn" data-target="speak27">&#128266;</button>
+                    <span id="speak27">I’m not too bad.</span>
+                </div>
+                <div class="bubble1 r">
+                    <button class="speak_btn" data-target="speak28" data-voice="male">&#128266;</button>
+                    <span id="speak28">My name is Marco. What’s your name?</span>
+                </div>
+
+                <div class="bubble1 l">
+                    <button class="speak_btn" data-target="speak29">&#128266;</button>
+                    <span id="speak29">My name is Nancy. Nice to meet you.</span>
+                </div>
+                <div class="bubble1 r">
+                    <button class="speak_btn" data-target="speak30" data-voice="male">&#128266;</button>
+                    <span id="speak30">Nice to meet you too. Where do you live?</span>
+                </div>
+
+                <div class="bubble1 l">
+                    <button class="speak_btn" data-target="speak31">&#128266;</button>
+                    <span id="speak31">I live in Chapel Hill. Where are you from?</span>
+                </div>
+                <div class="bubble1 r">
+                    <button class="speak_btn" data-target="speak32" data-voice="male">&#128266;</button>
+                    <span id="speak32">I’m from Mexico.</span>
+                </div>
+
+                <div class="bubble1 l">
+                    <button class="speak_btn" data-target="speak33">&#128266;</button>
+                    <span id="speak33">It’s been nice meeting you, but I need to go now.</span>
+                </div>
+                <div class="bubble1 r">
+                    <button class="speak_btn" data-target="speak34" data-voice="male">&#128266;</button>
+                    <span id="speak34">No problem, see you again.</span>
+                </div>
+                <div class="bubble1 l">
+                    <button class="speak_btn" data-target="speak35">&#128266;</button>
+                    <span id="speak35">Goodbye, Marco.</span>
+                </div>
+                <div class="bubble1 r">
+                    <button class="speak_btn" data-target="speak36" data-voice="male">&#128266;</button>
+                    <span id="speak36">You too. Bye, Nancy!</span>
+                </div>
             </div>
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Nepal Bhasa</div><div class="f-back">Jwojwo-loppa</div></div>
+            <div class="char char-right"><img src="images/marco.png" alt="Marco"></div>
+        </div><!-- /dialogue -->
+        <div class="quiz-card" data-qid="q3_1">
+            <div class="question-header">
+                <button class="speak_btn" data-target="speak37">&#128266;</button>
+                <div class="question-text">
+                    <span id="speak37">1. What does Nancy say to Marco at first?</span>
+                    <span class="nepali_sub">न्यान्सीले सुरुमा मार्कोलाई के भन्छिन्?</span>
+                </div>
             </div>
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Limbu</div><div class="f-back">Sewaro</div></div>
-            </div>
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Bhojpuri</div><div class="f-back">Ram Ram</div></div>
+            <div class="input-wrapper">
+                <input type="text" class="quiz-input" placeholder="Type answer here...">
+                <span class="status-icon"></span>
+                <button class="check-btn" onclick="validateAnswer(this, 'Hello', 'q3_1')">Check</button>
             </div>
         </div>
-    </div>
+
+        <div class="quiz-card" data-qid="q3_2" >
+            <div class="question-header">
+                <button class="speak_btn" data-target="speak41">&#128266;</button>
+                <div class="question-text">
+                    <span id="speak41">2. Where does Nancy live?</span>
+                    <span class="nepali_sub">न्यान्सी कहाँ बस्छिन्?</span>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <input type="text" class="quiz-input" placeholder="Type answer here...">
+                <span class="status-icon"></span>
+                <button class="check-btn" onclick="validateAnswer(this, 'Chapel Hill', 'q3_2')">Check</button>
+            </div>
+        </div>
+
+        <div class="quiz-card" data-qid="q3_3">
+            <div class="question-header">
+                <button class="speak_btn" data-target="speak45">&#128266;</button>
+                <div class="question-text">
+                    <span id="speak45">3. Where is Marco from?</span>
+                    <span class="nepali_sub">मार्को कहाँबाट आएका हुन्?</span>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <input type="text" class="quiz-input" placeholder="Type answer here...">
+                <span class="status-icon"></span>
+                <button class="check-btn" onclick="validateAnswer(this, 'Mexico', 'q3_3')">Check</button>
+            </div>
+        </div>
+
+        <div class="quiz-card" data-qid="q3_4">
+            <div class="question-header">
+                <button class="speak_btn" data-target="speak49">&#128266;</button>
+                <div class="question-text">
+                    <span id="speak49">4. What does Marco say at last?</span>
+                    <span class="nepali_sub">अन्त्यमा मार्कोले के भन्छन्?</span>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <input type="text" class="quiz-input" placeholder="Type answer here...">
+                <span class="status-icon"></span>
+                <button class="check-btn" onclick="validateAnswer(this, 'Bye', 'q3_4')">Check</button>
+            </div>
+        </div>
+                
+    </div><!-- /page -->
 
     <div id="page4" class="page">
-        <h2>Formal & Informal <span class="nepali-sub">औपचारिक र अनौपचारिक</span></h2>
-        <div class="instruction-box">
-            <p><strong>Formal:</strong> Teachers, bosses, or strangers. <span class="nepali-sub">शिक्षक, हाकिम वा अपरिचित व्यक्तिसँग।</span></p>
-            <p><strong>Informal:</strong> Friends and family. <span class="nepali-sub">साथीभाइ र परिवारसँग।</span></p>
-        </div>
+        <h2><button class="speak_btn" data-target="speak50">&#128266;</button>
+            <span id="speak50">Let's Study</span>
+            <span class="nepali_sub">अध्ययन गरौं</span>
+        </h2>
+        <p class="caption"><button class="speak_btn" data-target="speak51">&#128266;</button>
+            <span id="speak51">The conversation below show the different componenets of greetings and introduction. Read the sentences below aloud and answer the questions that follow</span>
+            <span class="nepali_sub">तलको कुराकानीले अभिवादन र परिचयका विभिन्न घटकहरू देखाउँछ। तलका वाक्यहरू ठूलो स्वरले पढ्नुहोस् र दिइएका प्रश्नहरूको उत्तर दिनुहोस्।</span>
+        </p>
+        <div class="dialogue">
+            <div class="char"><img src="images/ramita.png" alt="Ramita"></div>
+            <div class="chat-flow">
+                <div class="bubble1 l">
+                    <button class="speak_btn" data-target="speak52">&#128266;</button>
+                    <span id="speak52">Good morning, Lalita. How are you today?</span>
+                </div>
+                <div class="bubble1 r">
+                    <button class="speak_btn" data-target="speak53">&#128266;</button>
+                    <span id="speak53">Good Morning Ramita. I am doing just fine. How are you?</span>
+                </div>
+
+                <div class="bubble1 l">
+                    <button class="speak_btn" data-target="speak54">&#128266;</button>
+                    <span id="speak54">I am doing great. Are you coming to my home today?</span>
+                </div>
+                <div class="bubble1 r">
+                    <button class="speak_btn" data-target="speak55">&#128266;</button>
+                    <span id="speak55">I hope I can, but I have to go to the doctor this afternoon.</span>
+                </div>
+
+                <div class="bubble1 l">
+                    <button class="speak_btn" data-target="speak56">&#128266;</button>
+                    <span id="speak56">Okay. I understand, but I hope you can come.</span>
+                </div>
+                <div class="bubble1 r">
+                    <button class="speak_btn" data-target="speak57">&#128266;</button>
+                    <span id="speak57">I will try my best.</span>
+                </div>
+
+                <div class="bubble1 l">
+                    <button class="speak_btn" data-target="speak58">&#128266;</button>
+                    <span id="speak58">Thanks, Lalita. Goodbye.</span>
+                </div>
+                <div class="bubble1 r">
+                    <button class="speak_btn" data-target="speak59">&#128266;</button>
+                    <span id="speak59">Goodbye.</span>
+                </div>
+            </div>
+            <div class="char char-right"><img src="images/lalita.png" alt="Lalita"></div>
+        </div><!-- /dialogue -->
         <div class="quiz-block" data-qid="q4_1">
-            <p><strong>You meet your Doctor. How should you greet? <span class="nepali-sub">तपाईं डाक्टरलाई भेट्नुहुन्छ। कसरी अभिवादन गर्नुहुन्छ?</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q4_1')">"Good morning, Doctor." (Formal)</button>
-            <button class="option" onclick="handleQuiz(this, false, 'q4_1')">"Yo! What's up?" (Informal)</button>
-        </div>
-    </div>
+            <p>
+                <button class="speak_btn" data-target="speak60">&#128266;</button>
+                <strong>
+                <span id="speak60">At what time of the day do Ramita and Lalita meet?</span>
+                <span class="nepali_sub">रमिता र ललिताको भेट दिनको कुन समयमा भयो?</span>
+                </strong>
+            </p>
+            <div class="options-wrapper">
+                <div class="option_row rot_l">
+                    <button class="option" onclick="handleQuiz(this, true, 'q4_1')">
+                        <span id="speak61">Morning</span><span class="nepali_sub">(बिहान)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak61">&#128266;</button>
+                </div>
+                <div class="option_row rot_r">
+                    <button class="option" onclick="handleQuiz(this, false, 'q4_1')">
+                        <span id="speak62">Evening</span><span class="nepali_sub">(साँझ)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak62">&#128266;</button>
+                </div>
+                <div class="option_row rot_l">
+                    <button class="option" onclick="handleQuiz(this, false, 'q4_1')">
+                        <span id="speak63">Afternoon</span><span class="nepali_sub">(दिउँसो)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak63">&#128266;</button>
+                </div>
+            </div>
+        </div><!-- /quiz-block -->
+        <div class="quiz-block" data-qid="q4_2">
+            <p>
+                <button class="speak_btn" data-target="speak64">&#128266;</button>
+                <strong>
+                <span id="speak64">What will you say if somebody asks you "How are You"?</span>
+                <span class="nepali_sub">कसैले "कस्तो छौ" भनेर सोध्यो भने के भन्नेछौ?</span>
+                </strong>
+            </p>
+            <div class="options-wrapper">
+                <div class="option_row rot_l">
+                    <button class="option" onclick="handleQuiz(this, false, 'q4_2')">
+                        <span id="speak65">Good Morning</span><span class="nepali_sub">(शुभ प्रभात)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak65">&#128266;</button>
+                </div>
+                <div class="option_row rot_r">
+                    <button class="option" onclick="handleQuiz(this, false, 'q4_2')">
+                        <span id="speak66">Nice to meet you</span><span class="nepali_sub">(Nice to meet you)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak66">&#128266;</button>
+                </div>
+                <div class="option_row rot_l">
+                    <button class="option" onclick="handleQuiz(this, true, 'q4_2')">
+                        <span id="speak67">I'm doing fine</span><span class="nepali_sub">(म ठिक छु)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak67">&#128266;</button>
+                </div>
+            </div>
+        </div><!-- /quiz-block -->
+        <div class="quiz-block" data-qid="q4_3">
+            <p>
+                <button class="speak_btn" data-target="speak68">&#128266;</button>
+                <strong>
+                <span id="speak68">Where is Lalita going this afternoon</span>
+                <span class="nepali_sub">आज दिउँसो ललिता कहाँ जाँदैछिन्?</span>
+                </strong>
+            </p>
+            <div class="options-wrapper">
+                <div class="option_row rot_l">
+                    <button class="option" onclick="handleQuiz(this, true, 'q4_3')">
+                        <span id="speak69">a doctor's</span><span class="nepali_sub">(डाक्टरकोमा)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak69">&#128266;</button>
+                </div>
+                <div class="option_row rot_r">
+                    <button class="option" onclick="handleQuiz(this, false, 'q4_3')">
+                        <span id="speak70">Ramita's home</span><span class="nepali_sub">(रमिताको घर)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak70">&#128266;</button>
+                </div>
+                <div class="option_row rot_l">
+                    <button class="option" onclick="handleQuiz(this, false, 'q4_3')">
+                        <span id="speak71">a store</span><span class="nepali_sub">(पसल)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak71">&#128266;</button>
+                </div>
+            </div>
+        </div><!-- /quiz-block -->
+        <div class="quiz-block" data-qid="q4_4">
+            <p>
+                <button class="speak_btn" data-target="speak72">&#128266;</button>
+                <strong>
+                <span id="speak72">If somebody says 'Goodbye' to you, what will you say?</span>
+                <span class="nepali_sub">यदि कसैले तपाईंलाई 'अलविदा' भन्यो भने, तपाईं के भन्नुहुन्छ?</span>
+                </strong>
+            </p>
+            <div class="options-wrapper">
+                <div class="option_row rot_l">
+                    <button class="option" onclick="handleQuiz(this, false, 'q4_4')">
+                        <span id="speak73">Thank you</span><span class="nepali_sub">(धन्यवाद)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak73">&#128266;</button>
+                </div>
+                <div class="option_row rot_r">
+                    <button class="option" onclick="handleQuiz(this, false, 'q4_4')">
+                        <span id="speak74">Very good</span><span class="nepali_sub">(धेरै राम्रो)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak74">&#128266;</button>
+                </div>
+                <div class="option_row rot_l">
+                    <button class="option" onclick="handleQuiz(this, true, 'q4_4')">
+                        <span id="speak75">Goodbye</span><span class="nepali_sub">(अलविदा)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak75">&#128266;</button>
+                </div>
+            </div>
+        </div><!-- /quiz-block -->
+        <p class="caption"><button class="speak_btn" data-target="speak76">&#128266;</button>
+            <span id="speak76">Glossary (Click the cards to flip and see the translated meaning of the word)</span>
+            <span class="nepali_sub">शब्दावली (शब्दको अनुवादित अर्थ हेर्न कार्डहरू पल्टाउन क्लिक गर्नुहोस्)</span>
+        </p>
+       <div class="flipcard_plc">
+            <div class="flip-card" onclick="toggleFlip(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3 id="speak_flip1">Store</h3>
+                        <button class="speak_btn" onclick="playSpeech(document.getElementById('speak_flip1').innerText, false); event.stopPropagation();">&#128266;</button>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3 id="speak_flip2">Shop</h3>
+                        <button class="speak_btn" onclick="playSpeech(document.getElementById('speak_flip2').innerText, false); event.stopPropagation();">&#128266;</button>
+                        <p class="nepali_sub">पसल</p>
+                    </div>
+                </div>
+            </div><!-- /flipcard -->
+            <div class="flip-card" onclick="toggleFlip(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3 id="speak_flip3">Fine</h3>
+                        <button class="speak_btn" onclick="playSpeech(document.getElementById('speak_flip3').innerText, false); event.stopPropagation();">&#128266;</button>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3 id="speak_flip4">Well</h3>
+                        <button class="speak_btn" onclick="playSpeech(document.getElementById('speak_flip4').innerText, false); event.stopPropagation();">&#128266;</button>
+                        <p class="nepali_sub">ठीक</p>
+                    </div>
+                </div>
+            </div><!-- /flipcard -->
+            <div class="flip-card" onclick="toggleFlip(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3 id="speak_flip5">Understand</h3>
+                        <button class="speak_btn" onclick="playSpeech(document.getElementById('speak_flip5').innerText, false); event.stopPropagation();">&#128266;</button>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3 id="speak_flip6">To know what something means</h3>
+                        <button class="speak_btn" onclick="playSpeech(document.getElementById('speak_flip6').innerText, false); event.stopPropagation();">&#128266;</button>
+                        <p class="nepali_sub">बुझ्नु</p>
+                    </div>
+                </div>
+            </div><!-- /flipcard -->
+            <div class="flip-card" onclick="toggleFlip(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3 id="speak_flip7">Try Best</h3>
+                        <button class="speak_btn" onclick="playSpeech(document.getElementById('speak_flip7').innerText, false); event.stopPropagation();">&#128266;</button>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3 id="speak_flip8">To try as much as you can</h3>
+                        <button class="speak_btn" onclick="playSpeech(document.getElementById('speak_flip8').innerText, false); event.stopPropagation();">&#128266;</button>
+                        <p class="nepali_sub">सकेसम्म प्रयास गर्नु</p>
+                    </div>
+                </div>
+            </div><!-- /flipcard -->
+            
+        </div><!-- /flipcard_plc -->
+        <p class="caption"><button class="speak_btn" data-target="speak77">&#128266;</button>
+            <span id="speak77">Pick who said the following?</span>
+            <span class="nepali_sub">निम्न संवाद कसले भन्यो छान्नुहोस्?</span>
+        </p>
+        <div class="quiz-block" data-qid="q4_5">
+            <p>
+                <button class="speak_btn" data-target="speak78">&#128266;</button>
+                <strong>
+                <span id="speak78">How are you today?</span>
+                <span class="nepali_sub">आज तिमीलाई कस्तो छ?</span>
+                </strong>
+            </p>
+            <div class="options-wrapper">
+                <div class="option_row">
+                    <button class="option avatar_r" onclick="handleQuiz(this, true, 'q4_5')">
+                        <span id="speak79">Ramita</span><span class="nepali_sub">(रमिता)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak79">&#128266;</button>
+                </div>
+                <div class="option_row">
+                    <button class="option avatar_l" onclick="handleQuiz(this, false, 'q4_5')">
+                        <span id="speak80">Lalita</span><span class="nepali_sub">(ललिता)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak80">&#128266;</button>
+                </div>
+            </div>
+        </div><!-- /quiz-block -->
+        <div class="quiz-block" data-qid="q4_6">
+            <p>
+                <button class="speak_btn" data-target="speak81">&#128266;</button>
+                <strong>
+                <span id="speak81">I am doing just fine.</span>
+                <span class="nepali_sub">म ठिकै छु।</span>
+                </strong>
+            </p>
+            <div class="options-wrapper">
+                <div class="option_row">
+                    <button class="option avatar_r" onclick="handleQuiz(this, false, 'q4_6')">
+                        <span id="speak82">Ramita</span><span class="nepali_sub">(रमिता)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak82">&#128266;</button>
+                </div>
+                <div class="option_row">
+                    <button class="option avatar_l" onclick="handleQuiz(this, true, 'q4_6')">
+                        <span id="speak83">Lalita</span><span class="nepali_sub">(ललिता)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak83">&#128266;</button>
+                </div>
+            </div>
+        </div><!-- /quiz-block -->
+        <div class="quiz-block" data-qid="q4_7">
+            <p>
+                <button class="speak_btn" data-target="speak84">&#128266;</button>
+                <strong>
+                <span id="speak84">I will try my best</span>
+                <span class="nepali_sub">म सक्दो प्रयास गर्नेछु</span>
+                </strong>
+            </p>
+            <div class="options-wrapper">
+                <div class="option_row">
+                    <button class="option avatar_r" onclick="handleQuiz(this, false, 'q4_7')">
+                        <span id="speak85">Ramita</span><span class="nepali_sub">(रमिता)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak85">&#128266;</button>
+                </div>
+                <div class="option_row">
+                    <button class="option avatar_l" onclick="handleQuiz(this, true, 'q4_7')">
+                        <span id="speak86">Lalita</span><span class="nepali_sub">(ललिता)</span>
+                    </button>
+                    <button class="speak_btn" data-target="speak86">&#128266;</button>
+                </div>
+            </div>
+        </div><!-- /quiz-block -->
+        <div id="q4_8_area" class="quiz-block" data-qid="q4_8">
+            <p class="caption">
+                <button class="speak_btn" data-target="speak87">&#128266;</button>
+                <span id="speak87">Read the dialogue again (below) and select the sentences that are used for greetings</span>
+                <span class="nepali_sub">संवाद फेरि पढ्नुहोस् (तल) र अभिवादनको लागि प्रयोग हुने वाक्यहरू छान्नुहोस्।</span>
+            </p>
 
-    <div id="page5" class="page">
-        <h2>Time of Day <span class="nepali-sub">समय अनुसारको अभिवादन</span></h2>
-        <div class="quiz-block" data-qid="q5_1">
-            <p><strong>It is 2:00 PM. What do you say? <span class="nepali-sub">दिउँसोको २ बजेको छ। तपाईं के भन्नुहुन्छ?</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q5_1')">Good Afternoon</button>
-            <button class="option" onclick="handleQuiz(this, false, 'q5_1')">Good Morning</button>
-        </div>
-        <div class="quiz-block" data-qid="q5_2">
-            <p><strong>Going to bed at 9:00 PM. You say: <span class="nepali-sub">राती ९ बजे सुत्न जाँदा भनिन्छ:</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q5_2')">Good Night <small>(शुभ रात्री)</small></button>
-            <button class="option" onclick="handleQuiz(this, false, 'q5_2')">Good Afternoon</button>
-        </div>
-    </div>
+            <div class="dialogue interactive-exercise">
+                <div class="char"><img src="images/ramita.png" alt="Ramita"></div>
+                <div class="chat-flow">
+                    <div class="bubble1 l">
+                        <button class="speak_btn" data-target="speak52_ex">&#128266;</button>
+                        <span id="speak52_ex">
+                            <span class="phrase correct">Good morning</span>, Lalita. 
+                            <span class="phrase correct">How are you today?</span>
+                        </span>
+                    </div>
 
+                    <div class="bubble1 r">
+                        <button class="speak_btn" data-target="speak53_ex">&#128266;</button>
+                        <span id="speak53_ex">
+                            <span class="phrase correct">Good Morning</span> Ramita. 
+                            <span class="phrase wrong">I am doing just fine.</span> 
+                            <span class="phrase correct">How are you?</span>
+                        </span>
+                    </div>
+
+                    <div class="bubble1 l">
+                        <button class="speak_btn" data-target="speak54_ex">&#128266;</button>
+                        <span id="speak54_ex">
+                            <span class="phrase wrong">I am doing great.</span> 
+                            <span class="phrase wrong">Are you coming to my home today?</span>
+                        </span>
+                    </div>
+
+                    <div class="bubble1 r">
+                        <button class="speak_btn" data-target="speak55_ex">&#128266;</button>
+                        <span id="speak55_ex">
+                            <span class="phrase wrong">I hope I can,</span>but I have to 
+                            <span class="phrase wrong">go to the doctor this afternoon.</span>
+                        </span>
+                    </div>
+
+                    <div class="bubble1 l">
+                        <button class="speak_btn" data-target="speak56_ex">&#128266;</button>
+                        <span id="speak56_ex">
+                            <span class="phrase wrong">Okay. I understand,</span>but I 
+                            <span class="phrase wrong">hope you can come.</span>
+                        </span>
+                    </div>
+                    <div class="bubble1 r">
+                        <button class="speak_btn" data-target="speak56_ex">&#128266;</button>
+                        <span id="speak56_ex">
+                            <span class="phrase wrong">I will try</span> 
+                            <span class="phrase wrong">my best</span>
+                        </span>
+                    </div>
+
+                    <div class="bubble1 l">
+                        <button class="speak_btn" data-target="speak58_ex">&#128266;</button>
+                        <span id="speak58_ex">
+                            <span class="phrase wrong">Thanks, Lalita.</span> 
+                            <span class="phrase correct">Goodbye.</span>
+                        </span>
+                    </div>
+
+                    <div class="bubble1 r">
+                        <button class="speak_btn" data-target="speak59_ex">&#128266;</button>
+                        <span id="speak59_ex">
+                            <span class="phrase correct">Goodbye.</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="char char-right"><img src="images/lalita.png" alt="Lalita"></div>
+            </div>
+
+            <div class="counter-box">
+                Greetings Found: <span id="greeting_count">0</span> / 6
+            </div>
+        </div>
+    </div><!-- /page -->
+     <div id="page5" class="page">
+        <h2><button class="speak_btn" data-target="speak88">&#128266;</button>
+            <span id="speak88">Let's Speak</span>
+            <span class="nepali_sub">बोलौं</span>
+        </h2>
+        <p class="caption"><button class="speak_btn" data-target="speak89">&#128266;</button>
+            <span id="speak89">Learn some more ways of greeting and goodbyes</span>
+            <span class="nepali_sub">अभिवादन र बिदाईका केही थप तरिकाहरू सिक्नुहोस्</span>
+        </p>
+        <div class="table-wrapper">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        <button class="speak_btn" data-target="head1">&#128266;</button>
+                        <span id="head1">Goodbyes in formal situations</span>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <button class="speak_btn" data-target="g1_0">&#128266;</button>
+                        <span id="g1_0">Sample Greeting</span> (अभिवादन)
+                    </th>
+                    <th>
+                        <button class="speak_btn" data-target="r1_0">&#128266;</button>
+                        <span id="r1_0">Sample Response</span> (प्रतिक्रिया)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g1_1">&#128266;</button>
+                            <span id="g1_1">Hello, Mr Smith</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r1_1">&#128266;</button>
+                            <span id="r1_1">Hello</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g1_2">&#128266;</button>
+                            <span id="g1_2">Hello, Doctor</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r1_2">&#128266;</button>
+                            <span id="r1_2">Hello</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g1_3">&#128266;</button>
+                            <span id="g1_3">Good Morning</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r1_3">&#128266;</button>
+                            <span id="r1_3">Good Morning</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g1_4">&#128266;</button>
+                            <span id="g1_4">Good Afternoon</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r1_4">&#128266;</button>
+                            <span id="r1_4">Good Afternoon</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g1_5">&#128266;</button>
+                            <span id="g1_5">Good Evening</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r1_5">&#128266;</button>
+                            <span id="r1_5">Good Evening</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g1_6">&#128266;</button>
+                            <span id="g1_6">How are you?</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r1_6">&#128266;</button>
+                            <span id="r1_6">Fine, thank you</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g1_7">&#128266;</button>
+                            <span id="g1_7">How do you do?</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r1_7">&#128266;</button>
+                            <span id="r1_7">Very well, thank you</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div><!-- /table -->
+        <div class="table-wrapper">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        <button class="speak_btn" data-target="head2">&#128266;</button>
+                        <span id="head2">Goodbyes in formal situations</span>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <button class="speak_btn" data-target="g2_0">&#128266;</button>
+                        <span id="g2_0">Sample Greeting</span> (अभिवादन)
+                    </th>
+                    <th>
+                        <button class="speak_btn" data-target="r2_0">&#128266;</button>
+                        <span id="r2_0">Sample Response</span> (प्रतिक्रिया)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g2_1">&#128266;</button>
+                            <span id="g2_1">Hey. Hi</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r2_1">&#128266;</button>
+                            <span id="r2_1">Hey. Hi</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g2_2">&#128266;</button>
+                            <span id="g2_2">How are ya?</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r2_2">&#128266;</button>
+                            <span id="r2_2">I'm good. Alright.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g2_3">&#128266;</button>
+                            <span id="g2_3">How are things?</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r2_3">&#128266;</button>
+                            <span id="r2_3">Pretty good.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g2_4">&#128266;</button>
+                            <span id="g2_4">How's it going?</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r2_4">&#128266;</button>
+                            <span id="r2_4">Ok. Not bad.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g2_5">&#128266;</button>
+                            <span id="g2_5">How you doing?</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r2_5">&#128266;</button>
+                            <span id="r2_5">I'm doing good.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g2_6">&#128266;</button>
+                            <span id="g2_6">What's up?</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r2_6">&#128266;</button>
+                            <span id="r2_6">Nothing much</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g2_7">&#128266;</button>
+                            <span id="g2_7">What's happening?</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r2_7">&#128266;</button>
+                            <span id="r2_7">Not a whole lot.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g2_8">&#128266;</button>
+                            <span id="g2_8">What's new</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r2_8">&#128266;</button>
+                            <span id="r2_8">Nothing</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g2_9">&#128266;</button>
+                            <span id="g2_9">What are you upto?</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r2_9">&#128266;</button>
+                            <span id="r2_9">Nothing special.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g2_10">&#128266;</button>
+                            <span id="g2_10">What's going on?</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r2_10">&#128266;</button>
+                            <span id="r2_10">Not much.</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div><!-- /table -->
+        <div class="table-wrapper">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        <button class="speak_btn" data-target="head3">&#128266;</button>
+                        <span id="head3">Goodbyes in formal situations</span>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <button class="speak_btn" data-target="g3_0">&#128266;</button>
+                        <span id="g3_0">Sample Goodbye</span> (अलविदा)
+                    </th>
+                    <th>
+                        <button class="speak_btn" data-target="r3_0">&#128266;</button>
+                        <span id="r3_0">Sample Response</span> (प्रतिक्रिया)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g3_1">&#128266;</button>
+                            <span id="g3_1">It was nice meeting you.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r3_1">&#128266;</button>
+                            <span id="r3_1">It was nice meeting you too.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g3_2">&#128266;</button>
+                            <span id="g3_2">It was nice to see you</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r3_2">&#128266;</button>
+                            <span id="r3_2">Same to you</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g3_3">&#128266;</button>
+                            <span id="g3_3">Have a good day</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r3_3">&#128266;</button>
+                            <span id="r3_3">Thank you. You too.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g3_4">&#128266;</button>
+                            <span id="g3_4">Good Evening/ Goodbye</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r3_4">&#128266;</button>
+                            <span id="r3_4">Good Evening/ Goodbye</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div><!-- /table -->
+        <div class="table-wrapper">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        <button class="speak_btn" data-target="head4">&#128266;</button>
+                        <span id="head4">Goodbyes in informal situations</span>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <button class="speak_btn" data-target="g4_0">&#128266;</button>
+                        <span id="g4_0">Sample Goodbye</span> (अलविदा)
+                    </th>
+                    <th>
+                        <button class="speak_btn" data-target="r4_0">&#128266;</button>
+                        <span id="r4_0">Sample Response</span> (प्रतिक्रिया)
+                    </th>
+                </tr>
+            </thead>
+                        <tbody>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g4_1">&#128266;</button>
+                            <span id="g4_1">Nice meeting you.</span>
+                        </div>
+                    </td>
+                    <td rowspan="3">
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r4_1">&#128266;</button>
+                            <span id="r4_1">You too</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g4_2">&#128266;</button>
+                            <span id="g4_2">Take it easy.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g4_3">&#128266;</button>
+                            <span id="g4_3">Take care.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g4_4">&#128266;</button>
+                            <span id="g4_4">I'm off.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r4_4">&#128266;</button>
+                            <span id="r4_4">Ok bye.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g4_5">&#128266;</button>
+                            <span id="g4_5">I have to go.</span>
+                        </div>
+                    </td>
+                    <td rowspan="5">
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="r4_5">&#128266;</button>
+                            <span id="r4_5">See you. See you later. Bye.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g4_6">&#128266;</button>
+                            <span id="g4_6">See you</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g4_7">&#128266;</button>
+                            <span id="g4_7">See you later</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g4_8">&#128266;</button>
+                            <span id="g4_8">So long</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <button class="speak_btn" data-target="g4_9">&#128266;</button>
+                            <span id="g4_9">Bye</span>
+                        </div>
+                    </td>
+                </tr>                
+            </tbody>
+        </table>
+        </div><!-- /table -->
+        <p class="caption"><button class="speak_btn" data-target="speak_g90">&#128266;</button>
+            <span id="speak_g90">How do you greet in the following situations? Act them out.</span>
+            <span class="nepali_sub">निम्न परिस्थितिहरूमा तपाईं कसरी अभिवादन गर्नुहुन्छ? अभिनय बाट ब्याक्त गर्नुहोस</span>
+        </p>
+        <ul class="caption_list">
+          <li>
+            <button class="speak_btn" data-target="speak_g91">&#128266;</button>
+            <span id="speak_g91">How do you greet your friends when you meet them at home?</span></li>
+          <li>
+            <button class="speak_btn" data-target="speak_g92">&#128266;</button>
+            <span id="speak_g92">How do you greet your friends at a meeting.</span></li>
+          <li>
+            <button class="speak_btn" data-target="speak_g93">&#128266;</button>
+            <span id="speak_g93">How do you greet the chairperson of your ward.</span></li>
+          <li>
+            <button class="speak_btn" data-target="speak_g94">&#128266;</button>
+            <span id="speak_g94">How do you greet your uncle.</span></li>
+          <li>
+            <button class="speak_btn" data-target="speak_g95">&#128266;</button>
+            <span id="speak_g95">How do you greet a person whom you meet for the first time?</span></li>
+          <li>
+            <button class="speak_btn" data-target="speak_g96">&#128266;</button>
+            <span id="speak_g96">How do you greet a doctor in the evening?</span></li>
+          <li>
+            <button class="speak_btn" data-target="speak_g97">&#128266;</button>
+            <span id="speak_g97">How do you greet the headteacher of a school in your community at 3 o’clock?</span></li>
+          <li>
+            <button class="speak_btn" data-target="speak_g98">&#128266;</button>
+            <span id="speak_g98">How do you greet your boss when you meet in the morning?</span></li>
+        </ul>
+        <p class="caption"><button class="speak_btn" data-target="speak91">&#128266;</button>
+            <span id="speak91">Match the greetings with their correct responses. Click the greeting, then click the correct response to establish a match.</span>
+            <span class="nepali_sub">अभिवादनहरूलाई तिनीहरूको सही प्रतिक्रियाहरूसँग मिलाउनुहोस्। अभिवादनमा क्लिक गर्नुहोस्, त्यसपछि मिलान स्थापित गर्न सही प्रतिक्रियामा क्लिक गर्नुहोस्।</span>
+        </p>
+        <div id="q5_1" class="match-wrapper">
+                <svg id="match-svg"></svg>
+
+            <div class="match-column" id="left-col">
+                <div class="match-item" data-pair="1" id="L1"><button class="speak_btn" data-target="m1">&#128266;</button><span id="m1">Hi</span></div>
+                <div class="match-item" data-pair="2" id="L2"><button class="speak_btn" data-target="m2">&#128266;</button><span id="m2">How do you do?</span></div>
+                <div class="match-item" data-pair="3" id="L3"><button class="speak_btn" data-target="m3">&#128266;</button><span id="m3">How are you doing?</span></div>
+                <div class="match-item" data-pair="4" id="L4"><button class="speak_btn" data-target="m4">&#128266;</button><span id="m4">What’s up?</span></div>
+                <div class="match-item" data-pair="5" id="L5"><button class="speak_btn" data-target="m5">&#128266;</button><span id="m5">Hello</span></div>
+                <div class="match-item" data-pair="6" id="L6"><button class="speak_btn" data-target="m6">&#128266;</button><span id="m6">How are you?</span></div>
+                <div class="match-item" data-pair="7" id="L7"><button class="speak_btn" data-target="m7">&#128266;</button><span id="m7">Good morning/afternoon/evening</span></div>
+                <div class="match-item" data-pair="8" id="L8"><button class="speak_btn" data-target="m8">&#128266;</button><span id="m8">Good to see you.</span></div>
+            </div>
+
+            <div class="match-column" id="right-col">
+                <div class="match-item" data-pair="6" id="R1"><button class="speak_btn" data-target="mr1">&#128266;</button><span id="mr1">Very well, thank You. And you?</span></div>
+                <div class="match-item" data-pair="1" id="R2"><button class="speak_btn" data-target="mr2">&#128266;</button><span id="mr2">Hello/Hi</span></div>
+                <div class="match-item" data-pair="8" id="R3"><button class="speak_btn" data-target="mr3">&#128266;</button><span id="mr3">Good to see you too.</span></div>
+                <div class="match-item" data-pair="2" id="R4"><button class="speak_btn" data-target="mr4">&#128266;</button><span id="mr4">How do you do?</span></div>
+                <div class="match-item" data-pair="4" id="R5"><button class="speak_btn" data-target="mr5">&#128266;</button><span id="mr5">Nothing much</span></div>
+                <div class="match-item" data-pair="7" id="R6"><button class="speak_btn" data-target="mr6">&#128266;</button><span id="mr6">Good morning/afternoon/evening</span></div>
+                <div class="match-item" data-pair="3" id="R7"><button class="speak_btn" data-target="mr7">&#128266;</button><span id="mr7">Alright. How about you?</span></div>
+                <div class="match-item" data-pair="5" id="R8"><button class="speak_btn" data-target="mr8">&#128266;</button><span id="mr8">Hi/Hello</span></div>
+            </div>
+        </div>
+    </div><!-- /page -->
     <div id="page6" class="page">
-        <h2>Vocabulary <span class="nepali-sub">शब्दावली</span></h2>
-        <p>Click to see meanings: <span class="nepali-sub">अर्थ हेर्न क्लिक गर्नुहोस्:</span></p>
-        <div class="flip-grid">
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Fine</div><div class="f-back">ठीक छ</div></div>
-            </div>
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Understand</div><div class="f-back">बुझ्नु</div></div>
-            </div>
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Store</div><div class="f-back">पसल</div></div>
-            </div>
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Try Best</div><div class="f-back">सकेसम्म प्रयास गर्ने</div></div>
-            </div>
-        </div>
-    </div>
-
-    <div id="page7" class="page">
-        <h2>Dialogue Practice <span class="nepali-sub">संवाद अभ्यास</span></h2>
-        <div class="dialogue-box">
-               <p>
-                   <strong>Ramita:</strong> Good morning, Lalita. How are you today?
-                   <span class="nepali-sub">शुभ प्रभात, ललिता। आज तिमीलाई कस्तो छ?</span>
-               </p>
-               <p>
-                   <strong>Lalita:</strong> Good morning Ramita. I am doing just fine. How are you?
-                   <span class="nepali-sub">शुभ प्रभात रमिता। मलाई ठिकै छ। तिमीलाई नि कस्तो छ?</span>
-               </p>
-               <p>
-                   <strong>Ramita:</strong> I am doing great. Are you coming to my home today?
-                   <span class="nepali-sub">मलाई धेरै राम्रो छ। के तिमी आज मेरो घर आउँदैछौ?</span>
-               </p>
-               <p>
-                   <strong>Lalita:</strong> I hope I can, but I have to go to the doctor this afternoon.
-                   <span class="nepali-sub">म आउने आशा गर्छु, तर आज दिउँसो म डाक्टरकहाँ जानुपर्नेछ।</span>
-               </p>
-               <p>
-                   <strong>Ramita:</strong> Okay. I understand, but I hope you can come.
-                   <span class="nepali-sub">हुन्छ, मैले बुझें, तर तिमी आउन सक्छौ भन्ने आशा छ।</span>
-               </p>
-               <p>
-                   <strong>Lalita:</strong> I will try my best.
-                   <span class="nepali-sub">म सकेसम्म प्रयास गर्नेछु।</span>
-               </p>
-               <p>
-                   <strong>Ramita:</strong> Thanks, Lalita. Goodbye
-                   <span class="nepali-sub">धन्यवाद, ललिता। बिदा त!</span>
-               </p>
-               <p>
-                   <strong>Lalita:</strong> Goodbye.
-                   <span class="nepali-sub">बिदा!</span>
-               </p>
-        </div>
-        
-        <div class="quiz-block" data-qid="q7_1">
-            <p><strong>What is Lalita trying her best to do? <span class="nepali-sub">ललिताले के गर्न सक्दो प्रयास गर्नेछिन्?</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, false, 'q7_1')">To go to the doctor. <small>(डाक्टरकहाँ जानको लागि।)</small></button>
-            <button class="option" onclick="handleQuiz(this, true, 'q7_1')">To go to Ramita's home. <small>(रमिताको घर जानको लागि।)</small></button>
-        </div>
-    </div>
-
-    <div id="page8" class="page">
-        <h2>Matching <span class="nepali-sub">सही उत्तर छान्नुहोस्</span></h2>
-        <div class="quiz-block" data-qid="q8_1">
-            <p><strong>"How do you do?"</strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q8_1')">Response: "How do you do?"</button>
-            <button class="option" onclick="handleQuiz(this, false, 'q8_1')">Response: "Nothing much."</button>
-        </div>
-        <div class="quiz-block" data-qid="q8_2">
-            <p><strong>"What's up?"</strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q8_2')">Response: "Nothing much." <small>(केही खास छैन।)</small></button>
-            <button class="option" onclick="handleQuiz(this, false, 'q8_2')">Response: "I am fine."</button>
-        </div>
-    </div>
-
-    <div id="page9" class="page">
-        <h2>Section 1 Completed! <span class="nepali-sub">खण्ड १ सम्पन्न भयो!</span></h2>
-        <div class="instruction-box" style="background: #f0fdf4;">
-            <p>You have learned: <span class="nepali-sub">तपाईंले सिक्नुभयो:</span></p>
-            <ul>
-                <li>Greetings and responses. <span class="nepali-sub">अभिवादन र प्रतिक्रियाहरू।</span></li>
-                <li>Gestures (Namaste). <span class="nepali-sub">शारीरिक इसारा (नमस्ते)।</span></li>
-                <li>Formal vs Informal. <span class="nepali-sub">औपचारिक र अनौपचारिक प्रयोग।</span></li>
-            </ul>
-        </div>
-        <center><h3>Ready for Section 2? <span class="nepali-sub">के तपाईं खण्ड २ को लागि तयार हुनुहुन्छ?</span></h3></center>
-    </div>
-</main>
-
-<div class="footer-nav">
-    <button class="btn btn-back" id="btnBack" onclick="changePage(-1)" disabled>Back (पछाडि)</button>
-    <button class="btn btn-next" id="btnNext" onclick="changePage(1)" disabled>Next (अगाडि)</button>
-</div>
-
-<script>
-    let current = 0;
-    const total = 10;
-    const answers = { 
-        q0_1: false, q0_2: false, q1_1: false, q2_1: false, 
-        q4_1: false, q5_1: false, q5_2: false, q7_1: false, q8_1: false, q8_2: false 
-    };
-    const reqs = { 
-        0: ['q0_1', 'q0_2'], 1: ['q1_1'], 2: ['q2_1'], 3: [], 
-        4: ['q4_1'], 5: ['q5_1', 'q5_2'], 6: [], 7: ['q7_1'], 8: ['q8_1', 'q8_2'], 9: [] 
-    };
-
-    function handleQuiz(btn, isCorr, qid) {
-        const opts = btn.parentElement.querySelectorAll('.option');
-        opts.forEach(o => o.classList.remove('correct', 'wrong'));
-        if(isCorr) { btn.classList.add('correct'); answers[qid] = true; }
-        else { btn.classList.add('wrong'); answers[qid] = false; }
-        checkPage();
-    }
-
-    function checkPage() {
-        const r = reqs[current];
-        const ok = r.every(id => answers[id] === true);
-        document.getElementById('btnNext').disabled = !ok;
-    }
-
-    function changePage(step) {
-        document.getElementById(`page${current}`).classList.remove('active');
-        current += step;
-        document.getElementById(`page${current}`).classList.add('active');
-        document.getElementById('btnBack').disabled = (current === 0);
-        document.getElementById('pb').style.width = (current / (total-1) * 100) + "%";
-        
-        const nextBtn = document.getElementById('btnNext');
-        if(current === total-1) nextBtn.innerText = "Finish (समाप्त)";
-        else nextBtn.innerText = "Next (अगाडि)";
-        
-        checkPage();
-        window.scrollTo(0,0);
-    }
-</script>
-</body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L1 English - Section 1: Full Content</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/puter.js"></script>
-</head>
-<body>
-
-<header>
-    <div class="progress-wrapper"><div class="progress-bar" id="pb"></div></div>
-    <strong><button class="speak_btn" id="speak-button1">&#128266;</button><span id="speak1">Section 1: Greetings </span>(अभिवादन)</strong>
-    <script>
-        document.getElementById('speak-button1').addEventListener('click', () => {
-            const text = document.getElementById('speak1').innerText;
-            puter.ai.txt2speech(text, {
-                voice: "Ivy",
-                engine: "neural",
-                language: "en-US"
-            }).then((audio) => {
-                audio.play();
-            }).catch((error) => {
-                console.error("Speech Error:", error);
-            });
-        });
-        </script>
-</header>
-
-<main>
- 
-        <h2><button class="speak_btn" id="speak-button2">&#128266;</button><span id="speak2">Pre-Assessment </span><span class="nepali-sub">पूर्व-मूल्याङ्कन</span></h2>
-        <script>
-        document.getElementById('speak-button2').addEventListener('click', () => {
-            const text = document.getElementById('speak2').innerText;
-            puter.ai.txt2speech(text, {
-                voice: "Danielle",
-                engine: "generative",
-                language: "en-US"
-            }).then((audio) => {
-                audio.play();
-            }).catch((error) => {
-                console.error("Speech Error:", error);
-            });
-        });
-        </script>
-        
-        <p>
-            <button class="speak_btn" id="speak-button3">&#128266;</button>
-            <span id="speak3">Let's check your current knowledge before we start. </span>
-            <span class="nepali-sub">सुरु गर्नु अघि तपाईंको हालको ज्ञान परीक्षण गरौँ।</span>
+        <h2><button class="speak_btn" data-target="speak92">&#128266;</button>
+            <span id="speak92">Let's Type</span>
+            <span class="nepali_sub">टाइप गरौं</span>
+        </h2>
+        <p class="caption"><button class="speak_btn" data-target="speak93">&#128266;</button>
+            <span id="speak93">Study the conversations below. Learn how we can greet others in different situations.</span>
+            <span class="nepali_sub">तलका कुराकानीहरू अध्ययन गर्नुहोस्। विभिन्न परिस्थितिहरूमा हामी कसरी अरूलाई अभिवादन गर्न सक्छौं जान्नुहोस्।</span>
+        </p>
+        <div class="caption_convo">
+            <h3>
+                <button class="speak_btn" data-target="convo1_0">&#128266;</button>
+                <span id="convo1_0">Conversation 1</span>
+            </h3>
+            <p>
+                <button class="speak_btn" data-target="convo1_1" data-voice="male">&#128266;</button>
+                <strong>A: </strong><span id="convo1_1">Hello!</span>
+            </p>
+            <p>
+                <button class="speak_btn" data-target="convo1_2">&#128266;</button>
+                <strong>You: </strong><span id="convo1_2">Oh hi! Meeting you after a long time.</span>
+            </p>
+            <p>
+                <button class="speak_btn" data-target="convo1_3" data-voice="male">&#128266;</button>
+                <strong>A: </strong><span id="convo1_3">Yes, it's so good to see you after a long time. How have you been?</span>
+            </p>
+            <p>
+                <button class="speak_btn" data-target="convo1_4">&#128266;</button>
+                <strong>You: </strong><span id="convo1_4">Great! How about you?</span>
+            </p>
+        </div><!-- /caption_convo -->
+        <div class="caption_convo">
+            <h3>
+                <button class="speak_btn" data-target="convo2_0">&#128266;</button>
+                <span id="convo2_0">Conversation 2</span>
+            </h3>
+            <p>
+                <button class="speak_btn" data-target="convo2_1">&#128266;</button>
+                <strong>You: </strong><span id="convo2_1">How do you do, Sujan?</span>
+            </p>
+            <p>
+                <button class="speak_btn" data-target="convo2_2" data-voice="male">&#128266;</button>
+                <strong>Sujan: </strong><span id="convo2_2">How do you do?</span>
+            </p>
+            <p>
+                <button class="speak_btn" data-target="convo2_3">&#128266;</button>
+                <strong>You: </strong><span id="convo2_3">Did you have a comfortable journey?</span>
+            </p>
+            <p>
+                <button class="speak_btn" data-target="convo2_4" data-voice="male">&#128266;</button>
+                <strong>Sujan: </strong><span id="convo2_4">Not too bad, thank you.</span>
+            </p>
+        </div><!-- /caption_convo -->
+        <div class="caption_convo">
+            <h3>
+                <button class="speak_btn" data-target="convo3_0">&#128266;</button>
+                <span id="convo3_0">Conversation 3</span>
+            </h3>
+            <p>
+                <button class="speak_btn" data-target="convo3_1">&#128266;</button>
+                <strong>You: </strong><span id="convo3_1">Good morning madam. I've been waiting to see you.</span>
+            </p>
+            <p>
+                <button class="speak_btn" data-target="convo3_2">&#128266;</button>
+                <strong>Sabitra: </strong><span id="convo3_2">It's good to see you too</span>
+            </p>
+            <p>
+                <button class="speak_btn" data-target="convo3_3">&#128266;</button>
+                <strong>You: </strong><span id="convo3_3">How are you?</span>
+            </p>
+            <p>
+                <button class="speak_btn" data-target="convo3_4">&#128266;</button>
+                <strong>Sabitra: </strong><span id="convo3_4">I'm fine thank you.</span>
+            </p>
+        </div><!-- /caption_convo -->
+        <p class="caption"><button class="speak_btn" data-target="speak94">&#128266;</button>
+            <span id="speak94">Complete the following conversations.</span>
+            <span class="nepali_sub">निम्न कुराकानीहरू पूरा गर्नुहोस्।</span>
         </p>
 
-        <script>
-        document.getElementById('speak-button3').addEventListener('click', () => {
-            const text = document.getElementById('speak3').innerText;
-            puter.ai.txt2speech(text, {
-                voice: "Danielle",
-                engine: "generative",
-                language: "en-US"
-            }).then((audio) => {
-                audio.play();
-            }).catch((error) => {
-                console.error("Speech Error:", error);
-            });
-        });
-        </script>
-        
-        <div class="quiz-block" data-qid="q0_1">
-            <p><button class="speak_btn" id="speak-button4">&#128266;</button>
-                <strong>1.<span id="speak4"> Which greeting is used in the morning?</span> <span class="nepali-sub">बिहानको समयमा कुन अभिवादन प्रयोग गरिन्छ?</span></strong></p>
-            <script>
-            document.getElementById('speak-button4').addEventListener('click', () => {
-                const text = document.getElementById('speak4').innerText;
-                puter.ai.txt2speech(text, {
-                    voice: "Danielle",
-                    engine: "generative",
-                    language: "en-US"
-                }).then((audio) => {
-                    audio.play();
-                }).catch((error) => {
-                    console.error("Speech Error:", error);
-                });
-            });
-            </script>
-            <div class="option_row">
-            <button class="speak_btn" id="speak-button5">&#128266;</button><button class="option" onclick="handleQuiz(this, true, 'q0_1')"><span id="speak5">Good Morning</span> <small>(शुभ प्रभात)</small></button>
-            <script>
-            document.getElementById('speak-button5').addEventListener('click', () => {
-                const text = document.getElementById('speak5').innerText;
-                puter.ai.txt2speech(text, {
-                    voice: "Ivy",
-                    engine: "neural",
-                    language: "en-US"
-                }).then((audio) => {
-                    audio.play();
-                }).catch((error) => {
-                    console.error("Speech Error:", error);
-                });
-            });
-            </script>
-            </div>
-            <div class="option_row">
-            <button class="speak_btn" id="speak-button6">&#128266;</button><button class="option" onclick="handleQuiz(this, false, 'q0_1')"><span id="speak6">Good Afternoon</span> <small>(शुभ अपराह्न)</small></button>
-            <script>
-            document.getElementById('speak-button6').addEventListener('click', () => {
-                const text = document.getElementById('speak6').innerText;
-                puter.ai.txt2speech(text, {
-                     voice: "Ivy",
-                    engine: "neural",
-                    language: "en-US"
-                }).then((audio) => {
-                    audio.play();
-                }).catch((error) => {
-                    console.error("Speech Error:", error);
-                });
-            });
-            </script>
-            </div>
+    <div class="chat-container">
+
+        <div class="convo-section">
+            <h3 class="convo-title"><button class="speak_btn" data-target="ct1" data-voice="male">&#128266;</button>1. <span id="ct1">Meeting Mr. Thakuri</span></h3>
+            <div class="chat-thread">
+                
+                <div class="message received">
+                    <button class="speak_btn" data-target="speak95" data-voice="male">&#128266;</button>
+                    <div class="bubble">
+                        <small>Visitor</small>
+                        <span id="speak95">Good morning Mr. Thakuri.</span>
+                    </div>
+                </div>
+
+                <div class="message sent">
+                    <div class="bubble input-wrapper">
+                        <small>You</small>
+                        <div class="input-row">
+                            <input type="text" id="in_q6_1" class="quiz-input" placeholder="Type here...">
+                            <button class="check-btn" onclick="validateAnswer(this, 'Good Morning', 'q6_1')">Check</button>
+                            
+                            <button class="speak_btn" onclick="speakInput('in_q6_1')" title="Hear your answer">&#128266;</button>
+                        </div>
+                        <span class="status-icon"></span>
+                    </div>
+                </div>
+
+                <div class="message received">
+                    <button class="speak_btn" data-target="speak96" data-voice="male">&#128266;</button>
+                    <div class="bubble">
+                        <small>Visitor</small>
+                        <span id="speak96">How are you?</span>
+                    </div>
+                </div>
+
+                <div class="message sent">
+                    <div class="bubble input-wrapper">
+                        <small>You</small>
+                        <div class="input-row">
+                            <input type="text" id="in_q6_2" class="quiz-input" placeholder="Type here...">
+                            <button class="check-btn" onclick="validateAnswer(this, 'fine', 'q6_2')">Check</button>
+                            <button class="speak_btn" onclick="speakInput('in_q6_2')">&#128266;</button>
+                        </div>
+                        <span class="status-icon"></span>
+                    </div>
+                </div>
+
+                <div class="message received">
+                    <button class="speak_btn" data-target="speak97" data-voice="male">&#128266;</button>
+                    <div class="bubble">
+                        <small>Visitor</small>
+                        <span id="speak97">I'm fine too. It's been long since we last met.</span>
+                    </div>
+                </div>
+
+                <div class="message sent">
+                    <div class="bubble input-wrapper">
+                        <small>You</small>
+                        <div class="input-row">
+                            <input type="text" id="in_q6_3" class="quiz-input" placeholder="Type here...">
+                            <button class="check-btn" onclick="validateAnswer(this, 'yes', 'q6_3')">Check</button>
+                            <button class="speak_btn" onclick="speakInput('in_q6_3')">&#128266;</button>
+                        </div>
+                        <span class="status-icon"></span>
+                    </div>
+                </div>
+            </div><!-- /chat-thread -->
         </div>
 
-        <div class="quiz-block" data-qid="q0_2">
-            <p><strong>2. How do you respond to "How are you?" <span class="nepali-sub">"तपाईंलाई कस्तो छ?" भनेर सोध्दा के जवाफ दिनुहुन्छ?</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q0_2')">I am fine, thank you. <small>(मलाई ठिक छ, धन्यवाद।)</small></button>
-            <button class="option" onclick="handleQuiz(this, false, 'q0_2')">Nice to meet you. <small>(तपाईंलाई भेटेर खुसी लाग्यो।)</small></button>
-        </div>
-    </div>
-
-    <div id="page1" class="page">
-        <h2>Learning Objectives <span class="nepali-sub">सिकाइका उद्देश्यहरू</span></h2>
-        <div class="instruction-box">
-            <ul>
-                <li>Greet and respond in English and Mother Tongue. <span class="nepali-sub">अंग्रेजी र मातृभाषामा अभिवादन र प्रतिक्रिया दिन।</span></li>
-                <li>Identify formal and informal greetings. <span class="nepali-sub">औपचारिक र अनौपचारिक अभिवादनहरू चिन्न।</span></li>
-                <li>Understand body language and gestures. <span class="nepali-sub">शारीरिक भाषा र इसाराहरू बुझ्न।</span></li>
-            </ul>
-        </div>
-        <h3>Gestures <span class="nepali-sub">इसाराहरू</span></h3>
-        <p>In Nepal, we often use 'Namaste'. In English, we might wave or shake hands. <span class="nepali-sub">नेपालमा हामी 'नमस्ते' गर्छौँ। अंग्रेजीमा हात हल्लाउने वा हात मिलाउने गरिन्छ।</span></p>
-        
-        <div class="quiz-block" data-qid="q1_1">
-            <p><strong>Which gesture is most common for 'Namaste'? <span class="nepali-sub">'नमस्ते' गर्दा कुन इसारा सबैभन्दा बढी प्रयोग गरिन्छ?</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q1_1')">Joining two palms together <small>(दुई हत्केला जोड्ने)</small></button>
-            <button class="option" onclick="handleQuiz(this, false, 'q1_1')">Waving one hand <small>(एउटा हात हल्लाउने)</small></button>
-        </div>
-    </div>
-
-    <div id="page2" class="page">
-        <h2>Guess the Action <span class="nepali-sub">चित्र हेरेर अनुमान गरौँ</span></h2>
-        <p>Look at the image below. What is happening? <span class="nepali-sub">तलको चित्र हेर्नुहोस्। त्यहाँ के भइरहेको छ?</span></p>
-        <div style="background:#f1f5f9; padding:2rem; text-align:center; border-radius:15px; margin-bottom:1rem; border: 2px dashed #cbd5e1;">
-            <img src="images/greetings.png" alt="Namaste">
-        </div>
-        <div class="quiz-block" data-qid="q2_1">
-            <p><strong>What are the people doing? <span class="nepali-sub">मानिसहरू के गर्दैछन्?</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q2_1')">They are greeting each other. <small>(अभिवादन गर्दैछन्)</small></button>
-            <button class="option" onclick="handleQuiz(this, false, 'q2_1')">They are complaining. <small>(गुनासो गर्दैछन्)</small></button>
-        </div>
-    </div>
-
-    <div id="page3" class="page">
-        <h2>Mother Tongue Greetings <span class="nepali-sub">विभिन्न भाषामा अभिवादन</span></h2>
-        <p>Flip the cards to see greetings in different languages: <span class="nepali-sub">विभिन्न भाषामा कसरी अभिवादन गरिन्छ हेर्न कार्ड पल्टाउनुहोस्:</span></p>
-        <div class="flip-grid">
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Maithili</div><div class="f-back">Pranaam</div></div>
+        <div class="convo-section">
+        <h3 class="convo-title"><button class="speak_btn" data-target="ct2" data-voice="male">&#128266;</button>2. <span id="ct2">At the Company</span></h3>
+        <div class="chat-thread">
+            <div class="message received">
+                <button class="speak_btn" data-target="speak98" data-voice="male">&#128266;</button>
+                <div class="bubble">
+                    <small>Vikram</small>
+                    <span id="speak98">Good morning, Sir!</span>
+                </div>
             </div>
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Nepal Bhasa</div><div class="f-back">Jwojwo-loppa</div></div>
+
+            <div class="message sent">
+                <div class="bubble input-wrapper">
+                    <small>Kiran</small>
+                    <div class="inline-content">
+                        <input type="text" id="in_q6_4" class="quiz-input inline" placeholder="Type here...">
+                        <span>, Vikram. I didn't see you in the company yesterday. Are you keeping well?</span>
+                    </div>
+                    <div class="input-actions">
+                        <button class="check-btn" onclick="validateAnswer(this, 'Good Morning', 'q6_4')">Check</button>
+                        <button class="speak_btn" onclick="speakFullSentence('in_q6_4', ', Vikram. I didnt see you in the company yesterday. Are you keeping well?', this)" data-voice="male">&#128266;</button>
+                    </div>
+                    <span class="status-icon"></span>
+                </div>
             </div>
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Limbu</div><div class="f-back">Sewaro</div></div>
-            </div>
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Bhojpuri</div><div class="f-back">Ram Ram</div></div>
+
+            <div class="message received">
+                <div class="bubble input-wrapper">
+                    <small>Vikram</small>
+                    <div class="inline-content">
+                        <input type="text" id="in_q6_5" class="quiz-input inline" placeholder="Type here...">
+                        <span>, thank you very much</span>
+                    </div>
+                    <div class="input-actions">
+                        <button class="check-btn" onclick="validateAnswer(this, 'yes', 'q6_5')">Check</button>
+                        <button class="speak_btn" onclick="speakFullSentence('in_q6_5', ', thank you very much', this)" data-voice="male">&#128266;</button>
+                    </div>
+                    <span class="status-icon"></span>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="page4" class="page">
-        <h2>Formal & Informal <span class="nepali-sub">औपचारिक र अनौपचारिक</span></h2>
-        <div class="instruction-box">
-            <p><strong>Formal:</strong> Teachers, bosses, or strangers. <span class="nepali-sub">शिक्षक, हाकिम वा अपरिचित व्यक्तिसँग।</span></p>
-            <p><strong>Informal:</strong> Friends and family. <span class="nepali-sub">साथीभाइ र परिवारसँग।</span></p>
-        </div>
-        <div class="quiz-block" data-qid="q4_1">
-            <p><strong>You meet your Doctor. How should you greet? <span class="nepali-sub">तपाईं डाक्टरलाई भेट्नुहुन्छ। कसरी अभिवादन गर्नुहुन्छ?</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q4_1')">"Good morning, Doctor." (Formal)</button>
-            <button class="option" onclick="handleQuiz(this, false, 'q4_1')">"Yo! What's up?" (Informal)</button>
+    <div class="convo-section">
+        <h3 class="convo-title"><button class="speak_btn" data-target="ct3" data-voice="male">&#128266;</button>3. <span id="ct3">You meet an American at the airport</span></h3>
+        <div class="chat-thread">
+            <div class="message sent">
+                <div class="bubble input-wrapper">
+                    <small>You</small>
+                    <div class="inline-content">
+                        <span>Good morning sir.</span>
+                        <input type="text" id="in_q6_6" class="quiz-input inline" placeholder="Ask how he is...">
+                    </div>
+                    <div class="input-actions">
+                        <button class="check-btn" onclick="validateAnswer(this, 'How are you', 'q6_6')">Check</button>
+                        <button class="speak_btn" onclick="speakFullSentence('in_q6_6', '', this, 'Good morning sir. ')">&#128266;</button>
+                    </div>
+                    <span class="status-icon"></span>
+                </div>
+            </div>
+
+            <div class="message received">
+                <div class="bubble input-wrapper">
+                    <small>American</small>
+                    <div class="inline-content">
+                        <input type="text" id="in_q6_7" class="quiz-input inline" placeholder="Type here...">
+                    </div>
+                    <div class="input-actions">
+                        <button class="check-btn" onclick="validateAnswer(this, 'fine', 'q6_7')">Check</button>
+                        <button class="speak_btn" onclick="speakFullSentence('in_q6_7', '.', this)" data-voice="male">&#128266;</button>
+                    </div>
+                    <span class="status-icon"></span>
+                </div>
+            </div>
+
+            <div class="message sent">
+                <div class="bubble input-wrapper">
+                    <small>You</small>
+                    <div class="inline-content">
+                        <input type="text" id="in_q6_8" class="quiz-input inline" placeholder="Type here...">
+                    </div>
+                    <div class="input-actions">
+                        <button class="check-btn" onclick="validateAnswer(this, ' ', 'q6_8')">Check</button>
+                        <button class="speak_btn" onclick="speakFullSentence('in_q6_8', '.', this)">&#128266;</button>
+                    </div>
+                    <span class="status-icon"></span>
+                </div>
+            </div>
+
+            <div class="message received">
+                <div class="bubble input-wrapper">
+                    <small>American</small>
+                    <div class="inline-content">
+                        <input type="text" id="in_q6_9" class="quiz-input inline" placeholder="Type here...">
+                    </div>
+                    <div class="input-actions">
+                        <button class="check-btn" onclick="validateAnswer(this, ' ', 'q6_9')">Check</button>
+                        <button class="speak_btn" onclick="speakFullSentence('in_q6_9', '.', this)" data-voice="male">&#128266;</button>
+                    </div>
+                    <span class="status-icon"></span>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <div id="page5" class="page">
-        <h2>Time of Day <span class="nepali-sub">समय अनुसारको अभिवादन</span></h2>
-        <div class="quiz-block" data-qid="q5_1">
-            <p><strong>It is 2:00 PM. What do you say? <span class="nepali-sub">दिउँसोको २ बजेको छ। तपाईं के भन्नुहुन्छ?</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q5_1')">Good Afternoon</button>
-            <button class="option" onclick="handleQuiz(this, false, 'q5_1')">Good Morning</button>
-        </div>
-        <div class="quiz-block" data-qid="q5_2">
-            <p><strong>Going to bed at 9:00 PM. You say: <span class="nepali-sub">राती ९ बजे सुत्न जाँदा भनिन्छ:</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q5_2')">Good Night <small>(शुभ रात्री)</small></button>
-            <button class="option" onclick="handleQuiz(this, false, 'q5_2')">Good Afternoon</button>
+    <div class="convo-section">
+        <h3 class="convo-title"><button class="speak_btn" data-target="ct4" data-voice="male">&#128266;</button>4. <span id="ct4">Business meeting at a restaurant</span></h3>
+        <div class="chat-thread">
+            <div class="message sent">
+                <div class="bubble input-wrapper">
+                    <small>You</small>
+                    <div class="inline-content">
+                        <span>Hello sir. Good afternoon.</span>
+                        <input type="text" id="in_q6_10" class="quiz-input inline" placeholder="Ask how he is...">
+                    </div>
+                    <div class="input-actions">
+                        <button class="check-btn" onclick="validateAnswer(this, 'How are you', 'q6_10')">Check</button>
+                        <button class="speak_btn" onclick="speakFullSentence('in_q6_10', '', this, 'Hello sir. Good afternoon. ')">&#128266;</button>
+                    </div>
+                    <span class="status-icon"></span>
+                </div>
+            </div>
+
+            <div class="message received">
+                <div class="bubble input-wrapper">
+                    <small>Another Person</small>
+                    <div class="inline-content">
+                        <input type="text" id="in_q6_11" class="quiz-input inline" placeholder="Type here...">
+                    </div>
+                    <div class="input-actions">
+                        <button class="check-btn" onclick="validateAnswer(this, 'fine', 'q6_11')">Check</button>
+                        <button class="speak_btn" onclick="speakFullSentence('in_q6_11', '.', this)" data-voice="male">&#128266;</button>
+                    </div>
+                    <span class="status-icon"></span>
+                </div>
+            </div>
+
+            <div class="message sent">
+                <div class="bubble input-wrapper">
+                    <small>You</small>
+                    <div class="inline-content">
+                        <input type="text" id="in_q6_12" class="quiz-input inline" placeholder="Type here...">
+                    </div>
+                    <div class="input-actions">
+                        <button class="check-btn" onclick="validateAnswer(this, ' ', 'q6_12')">Check</button>
+                        <button class="speak_btn" onclick="speakFullSentence('in_q6_12', '', this)">&#128266;</button>
+                    </div>
+                    <span class="status-icon"></span>
+                </div>
+            </div>
+
+            <div class="message received">
+                <div class="bubble input-wrapper">
+                    <small>Another Person</small>
+                    <div class="inline-content">
+                        <input type="text" id="in_q6_13" class="quiz-input inline" placeholder="Type here...">
+                    </div>
+                    <div class="input-actions">
+                        <button class="check-btn" onclick="validateAnswer(this, ' ', 'q6_13')">Check</button>
+                        <button class="speak_btn" onclick="speakFullSentence('in_q6_13', '.', this)" data-voice="male">&#128266;</button>
+                    </div>
+                    <span class="status-icon"></span>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div id="page6" class="page">
-        <h2>Vocabulary <span class="nepali-sub">शब्दावली</span></h2>
-        <p>Click to see meanings: <span class="nepali-sub">अर्थ हेर्न क्लिक गर्नुहोस्:</span></p>
-        <div class="flip-grid">
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Fine</div><div class="f-back">ठीक छ</div></div>
-            </div>
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Understand</div><div class="f-back">बुझ्नु</div></div>
-            </div>
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Store</div><div class="f-back">पसल</div></div>
-            </div>
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner"><div class="f-front">Try Best</div><div class="f-back">सकेसम्म प्रयास गर्ने</div></div>
-            </div>
-        </div>
-    </div>
+</div><!-- /chat-container -->
 
-    <div id="page7" class="page">
-        <h2>Dialogue Practice <span class="nepali-sub">संवाद अभ्यास</span></h2>
-        <div class="dialogue-box">
-               <p>
-                   <strong>Ramita:</strong> Good morning, Lalita. How are you today?
-                   <span class="nepali-sub">शुभ प्रभात, ललिता। आज तिमीलाई कस्तो छ?</span>
-               </p>
-               <p>
-                   <strong>Lalita:</strong> Good morning Ramita. I am doing just fine. How are you?
-                   <span class="nepali-sub">शुभ प्रभात रमिता। मलाई ठिकै छ। तिमीलाई नि कस्तो छ?</span>
-               </p>
-               <p>
-                   <strong>Ramita:</strong> I am doing great. Are you coming to my home today?
-                   <span class="nepali-sub">मलाई धेरै राम्रो छ। के तिमी आज मेरो घर आउँदैछौ?</span>
-               </p>
-               <p>
-                   <strong>Lalita:</strong> I hope I can, but I have to go to the doctor this afternoon.
-                   <span class="nepali-sub">म आउने आशा गर्छु, तर आज दिउँसो म डाक्टरकहाँ जानुपर्नेछ।</span>
-               </p>
-               <p>
-                   <strong>Ramita:</strong> Okay. I understand, but I hope you can come.
-                   <span class="nepali-sub">हुन्छ, मैले बुझें, तर तिमी आउन सक्छौ भन्ने आशा छ।</span>
-               </p>
-               <p>
-                   <strong>Lalita:</strong> I will try my best.
-                   <span class="nepali-sub">म सकेसम्म प्रयास गर्नेछु।</span>
-               </p>
-               <p>
-                   <strong>Ramita:</strong> Thanks, Lalita. Goodbye
-                   <span class="nepali-sub">धन्यवाद, ललिता। बिदा त!</span>
-               </p>
-               <p>
-                   <strong>Lalita:</strong> Goodbye.
-                   <span class="nepali-sub">बिदा!</span>
-               </p>
-        </div>
-        
-        <div class="quiz-block" data-qid="q7_1">
-            <p><strong>What is Lalita trying her best to do? <span class="nepali-sub">ललिताले के गर्न सक्दो प्रयास गर्नेछिन्?</span></strong></p>
-            <button class="option" onclick="handleQuiz(this, false, 'q7_1')">To go to the doctor. <small>(डाक्टरकहाँ जानको लागि।)</small></button>
-            <button class="option" onclick="handleQuiz(this, true, 'q7_1')">To go to Ramita's home. <small>(रमिताको घर जानको लागि।)</small></button>
-        </div>
-    </div>
+<script>
+   /**
+ * Helper to speak the combined value of an input + static text
+ * @param {string} inputId - The ID of the input field
+ * @param {string} suffix - The remaining text of the sentence
+ * @param {HTMLElement} btn - The button element that was clicked
+ */
+function speakFullSentence(inputId, suffix, btn, prefix = "") {
+    const inputEl = document.getElementById(inputId);
+    const userText = inputEl ? inputEl.value : "";
+    
+    // Combines them in the correct order: Prefix + User's Input + Suffix
+    // Case 1 (Vikram): "" + "Good Morning" + ", Vikram..."
+    // Case 2 (Airport): "Good morning sir. " + "How are you" + ""
+    const fullMessage = prefix + userText + suffix;
+
+    const isMale = btn && btn.dataset.voice === 'male';
+    
+    // Fallback: If input is empty, speak what we have (prefix or suffix)
+    const finalSpeech = fullMessage.trim() === "" ? (prefix || suffix) : fullMessage;
+
+    playSpeech(finalSpeech, isMale);
+}
+
+/**
+ * Helper to speak just the input field value
+ */
+function speakInput(inputId, btn) {
+    const val = document.getElementById(inputId).value;
+    if (val.trim() !== "") {
+        const isMale = btn && btn.dataset.voice === 'male';
+        playSpeech(val, isMale);
+    }
+}
+</script>
+
+</div><!-- /page6 -->
+
+<div id="page7" class="page">
+        <h2><button class="speak_btn" data-target="speak99">&#128266;</button>
+            <span id="speak99">Exploratory Activity</span>
+            <span class="nepali_sub">अन्वेषण गतिविधि</span>
+        </h2>
+        <p class="caption"><button class="speak_btn" data-target="speak100">&#128266;</button>
+            <span id="speak100">There are many languages spoken in Nepal. Flip the cards to see how each language greet.</span>
+            <span class="nepali_sub">नेपालमा धेरै भाषाहरू बोलिन्छन्। प्रत्येक भाषाले कसरी अभिवादन गर्छ भनेर हेर्न कार्डहरू पल्टाउनुहोस्।</span>
+        </p>
+        <div class="flipcard_plc">
+            <div class="flip-card" onclick="toggleFlip(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Nepali</h3>
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Namaskar, namaste</h3>
+
+                        <p class="nepali_sub">नमस्कार, नमस्ते</p>
+                    </div>
+                </div>
+            </div><!-- /flipcard -->
+            <div class="flip-card" onclick="toggleFlip(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Nepal Bhasa</h3>
+
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Jwojolapaa</h3>
+
+                        <p class="nepali_sub">ज्वजलपा</p>
+                    </div>
+                </div>
+            </div><!-- /flipcard -->
+            <div class="flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Tamang</h3>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Fyafulla</h3>
+                    <p class="nepali_sub">फ्याफुल्ला</p>
+                </div>
+            </div>
+            </div><!-- /flipcard -->
+
+        <div class="flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Limbu</h3>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Sewaro</h3>
+                    <p class="nepali_sub">सेवारो</p>
+                </div>
+            </div>
+        </div><!-- /flipcard -->
+
+        <div class="flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Bhojpuri</h3>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Pranam</h3>
+                    <p class="nepali_sub">प्रणाम</p>
+                </div>
+            </div>
+        </div><!-- /flipcard -->
+
+        <div class="flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Maithili</h3>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Pranam / Godlagi</h3>
+                    <p class="nepali_sub">प्रणाम / गोडलागी</p>
+                </div>
+            </div>
+        </div><!-- /flipcard -->
+
+        <div class="flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Gurung</h3>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Chhyajalo</h3>
+                    <p class="nepali_sub">छ्याजलो</p>
+                </div>
+            </div>
+        </div><!-- /flipcard -->
+
+        <div class="flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Magar</h3>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Jhorle</h3>
+                    <p class="nepali_sub">झोर्ले</p>
+                </div>
+            </div>
+        </div><!-- /flipcard -->
+
+        <div class="flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Doteli</h3>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Namaskar</h3>
+                    <p class="nepali_sub">नमस्कार</p>
+                </div>
+            </div>
+        </div><!-- /flipcard -->
+
+        <div class="flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Tharu</h3>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Ram Ram</h3>
+                    <p class="nepali_sub">राम राम</p>
+                </div>
+            </div>
+        </div><!-- /flipcard -->
+            
+        </div><!-- /flipcard_plc -->
+    </div><!-- page -->
 
     <div id="page8" class="page">
-        <h2>Matching <span class="nepali-sub">सही उत्तर छान्नुहोस्</span></h2>
-        <div class="quiz-block" data-qid="q8_1">
-            <p><strong>"How do you do?"</strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q8_1')">Response: "How do you do?"</button>
-            <button class="option" onclick="handleQuiz(this, false, 'q8_1')">Response: "Nothing much."</button>
-        </div>
-        <div class="quiz-block" data-qid="q8_2">
-            <p><strong>"What's up?"</strong></p>
-            <button class="option" onclick="handleQuiz(this, true, 'q8_2')">Response: "Nothing much." <small>(केही खास छैन।)</small></button>
-            <button class="option" onclick="handleQuiz(this, false, 'q8_2')">Response: "I am fine."</button>
-        </div>
-    </div>
-
-    <div id="page9" class="page">
-        <h2>Section 1 Completed! <span class="nepali-sub">खण्ड १ सम्पन्न भयो!</span></h2>
-        <div class="instruction-box" style="background: #f0fdf4;">
-            <p>You have learned: <span class="nepali-sub">तपाईंले सिक्नुभयो:</span></p>
-            <ul>
-                <li>Greetings and responses. <span class="nepali-sub">अभिवादन र प्रतिक्रियाहरू।</span></li>
-                <li>Gestures (Namaste). <span class="nepali-sub">शारीरिक इसारा (नमस्ते)।</span></li>
-                <li>Formal vs Informal. <span class="nepali-sub">औपचारिक र अनौपचारिक प्रयोग।</span></li>
-            </ul>
-        </div>
-        <center><h3>Ready for Section 2? <span class="nepali-sub">के तपाईं खण्ड २ को लागि तयार हुनुहुन्छ?</span></h3></center>
-    </div>
+        <h2><button class="speak_btn" data-target="speak101">&#128266;</button>
+            <span id="speak101">Congratulations! You have completed this module, please proceed to the assessment.</span>
+            <span class="nepali_sub">बधाई छ! तपाईंले यो मोड्युल पूरा गर्नुभयो, कृपया मूल्याङ्कनको लागि अगाडि बढ्नुहोस्।</span>
+        </h2>
+    </div><!-- page -->
+    
 </main>
 
 <div class="footer-nav">
-    <button class="btn btn-back" id="btnBack" onclick="changePage(-1)" disabled>Back (पछाडि)</button>
-    <button class="btn btn-next" id="btnNext" onclick="changePage(1)" disabled>Next (अगाडि)</button>
+    <button class="speak_btn" data-target="speakBack" style="margin-right: -1.5rem;">&#128266;</button>
+    <button class="btn btn-back" id="btnBack" onclick="changePage(-1)" disabled>
+        <span id="speakBack">Back</span>(पछाडि)</button>
+    <button class="speak_btn" data-target="speakNext" style="margin-right: -1.5rem;">&#128266;</button>
+    <button class="btn btn-next" id="btnNext" onclick="changePage(1)" disabled>
+        <span id="speakNext">Next</span>(अगाडि)</button>
 </div>
 
-<script>
-    let current = 0;
-    const total = 10;
-    const answers = { 
-        q0_1: false, q0_2: false, q1_1: false, q2_1: false, 
-        q4_1: false, q5_1: false, q5_2: false, q7_1: false, q8_1: false, q8_2: false 
-    };
-    const reqs = { 
-        0: ['q0_1', 'q0_2'], 1: ['q1_1'], 2: ['q2_1'], 3: [], 
-        4: ['q4_1'], 5: ['q5_1', 'q5_2'], 6: [], 7: ['q7_1'], 8: ['q8_1', 'q8_2'], 9: [] 
-    };
-
-    function handleQuiz(btn, isCorr, qid) {
-        const opts = btn.parentElement.querySelectorAll('.option');
-        opts.forEach(o => o.classList.remove('correct', 'wrong'));
-        if(isCorr) { btn.classList.add('correct'); answers[qid] = true; }
-        else { btn.classList.add('wrong'); answers[qid] = false; }
-        checkPage();
-    }
-
-    function checkPage() {
-        const r = reqs[current];
-        const ok = r.every(id => answers[id] === true);
-        document.getElementById('btnNext').disabled = !ok;
-    }
-
-    function changePage(step) {
-        document.getElementById(`page${current}`).classList.remove('active');
-        current += step;
-        document.getElementById(`page${current}`).classList.add('active');
-        document.getElementById('btnBack').disabled = (current === 0);
-        document.getElementById('pb').style.width = (current / (total-1) * 100) + "%";
-        
-        const nextBtn = document.getElementById('btnNext');
-        if(current === total-1) nextBtn.innerText = "Finish (समाप्त)";
-        else nextBtn.innerText = "Next (अगाडि)";
-        
-        checkPage();
-        window.scrollTo(0,0);
-    }
-</script>
 </body>
->>>>>>> 90019cc02ce565b17c32e9accfd123010f7fbf75
 </html>
